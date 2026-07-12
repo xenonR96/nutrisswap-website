@@ -19,6 +19,7 @@ import { Sources } from './components/Sources';
 import { GetPage } from './components/GetPage';
 import { ComingSoonModal } from './components/ComingSoonModal';
 import { LanguageToggle } from './components/LanguageToggle';
+import { AppStoreBadge } from './components/AppStoreBadge';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/nutriswap/id6745822109';
 
@@ -121,11 +122,7 @@ function HomePage() {
               </h1>
               <p className="text-lg sm:text-xl text-gray-700 mb-8">{t('hero.subtitle')}</p>
               <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
-                <img
-                  src="/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
-                  alt={t('hero.downloadAlt')}
-                  className="h-14 sm:h-16 hover:opacity-90 transition-opacity"
-                />
+                <AppStoreBadge />
               </a>
             </div>
             <div className="relative">

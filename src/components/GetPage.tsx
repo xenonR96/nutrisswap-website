@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
 
+const APP_STORE_URL = 'https://apps.apple.com/app/nutriswap/id6745822109';
+
 export const GetPage = () => {
   useEffect(() => {
-    // Instant redirect to App Store
-    window.location.href =
-      'https://apps.apple.com/app/apple-store/id6745822109?pt=127832335&ct=tiktok&mt=8';
+    window.location.href = APP_STORE_URL;
   }, []);
 
   const handleAppStoreClick = () => {
-    window.location.href =
-      'https://apps.apple.com/app/apple-store/id6745822109?pt=127832335&ct=tiktok&mt=8';
+    window.location.href = APP_STORE_URL;
   };
 
   return (
@@ -61,13 +60,12 @@ export const GetPage = () => {
           Go to App Store
         </button>
 
-        {/* TikTok Instructions */}
         <div className="bg-white text-black rounded-2xl p-6 text-left">
           <p className="mb-4">
             <span className="inline-flex items-center justify-center w-6 h-6 bg-black text-white rounded-full text-sm mr-3">
               1
             </span>
-            Tap the three dots in the top right corner of TikTok.
+            Tap the menu in the top right corner of the app.
           </p>
           <p className="mb-4">
             <span className="inline-flex items-center justify-center w-6 h-6 bg-black text-white rounded-full text-sm mr-3">

@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "howItWorks": "How it works",
+    "features": "Features",
+    "faq": "FAQ",
+    "download": "Download"
+  },
+  "banner": "Available now on the App Store",
+  "hero": {
+    "title": "Scan. Know. Choose Better.",
+    "subtitle": "Point your camera at a barcode and get an instant NutriSwap score, ingredients breakdown, and smarter alternatives.",
+    "downloadAlt": "Download on the App Store",
+    "screenshotsAlt": "NutriSwap app scan screenshots"
+  },
+  "howItWorks": {
+    "title": "How NutriSwap Works",
+    "step1Title": "Scan any product",
+    "step1Desc": "Hold your phone over any product barcode — it takes less than a second.",
+    "step2Title": "Get instant analysis",
+    "step2Desc": "See your NutriSwap score, nutrition breakdown, ingredients, and personalized alerts.",
+    "step3Title": "Find better products",
+    "step3Desc": "Discover healthier alternatives you can buy right away."
+  },
+  "features": {
+    "title": "Everything you get after one scan",
+    "scoreTitle": "NutriSwap Score",
+    "scoreDesc": "A clear 0–100 rating so you instantly know if a product is excellent, good, limit, or avoid.",
+    "breakdownTitle": "Full Breakdown",
+    "breakdownDesc": "Seed oils, processing profile, added sugars, additives, nutrition, and eco score — all in one view.",
+    "alertsTitle": "Personalized Alerts",
+    "alertsDesc": "Get warned about allergens, seed oils, additives, and heavy metals based on your preferences.",
+    "ingredientsTitle": "Ingredients Explorer",
+    "ingredientsDesc": "Tap any ingredient to learn what it is, why it matters, and what effects it may have.",
+    "alternativesTitle": "Better Products to Buy",
+    "alternativesDesc": "See catalog alternatives with higher scores — available at stores near you.",
+    "analysisTitle": "NutriSwap Analysis",
+    "breakdownItems": {
+      "seedOils": "Seed Oils",
+      "processing": "Processing Profile",
+      "sugars": "Added or Synthetic Sugars",
+      "additives": "Additives"
+    }
+  },
+  "why": {
+    "title": "Why NutriSwap Makes Shopping Easier",
+    "scanTitle": "From barcode to clarity in seconds",
+    "scanItems": [
+      "Scan any barcode and get an instant NutriSwap score",
+      "See seed oils, processing level, sugars, and additives at a glance",
+      "Get personalized alerts for allergens and ingredients you want to avoid",
+      "Explore every ingredient with clear, educational explanations",
+      "Find better products to buy without comparing labels for minutes"
+    ],
+    "everyoneTitle": "Built for real shoppers",
+    "everyoneItems": [
+      "Managing allergies? Get instant alerts for hidden ingredients",
+      "Avoiding seed oils or additives? NutriSwap flags them automatically",
+      "Shopping for your family? Scan once and decide with confidence",
+      "Just curious? Explore ingredients without pressure or guilt"
+    ],
+    "videoAlt": "NutriSwap barcode scan demo",
+    "imageAlt": "People making healthier food choices"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "How does the barcode scanner work?",
+        "answer": "Simply point your phone camera at any product barcode. NutriSwap looks it up and shows your score, breakdown, ingredients, and alerts in seconds."
+      },
+      {
+        "question": "What's a NutriSwap score?",
+        "answer": "Your NutriSwap score rates products on a 0–100 scale based on processing, ingredients, nutrition, and more. Excellent, Good, Limit, or Avoid — so you know instantly."
+      },
+      {
+        "question": "What does the breakdown show?",
+        "answer": "After each scan you see seed oils, processing profile (NOVA), added or synthetic sugars, additives, nutrition details, and eco score."
+      },
+      {
+        "question": "Can I get alerts for allergens and additives?",
+        "answer": "Yes. Set your preferences and NutriSwap warns you about allergens, seed oils, additives, and heavy metals on every scan."
+      },
+      {
+        "question": "Does NutriSwap suggest better products?",
+        "answer": "Yes. When a product scores low, NutriSwap shows better catalog alternatives you can buy instead."
+      },
+      {
+        "question": "Where does the product data come from?",
+        "answer": "We use Open Food Facts and trusted nutrition databases, combined with NutriSwap's own analysis."
+      },
+      {
+        "question": "Can I search manually if scanning doesn't work?",
+        "answer": "Yes. You can type a product name or barcode number to look it up manually."
+      },
+      {
+        "question": "Is NutriSwap free?",
+        "answer": "You can start with a free trial to scan and explore. A subscription unlocks full access, personalized insights, and ad-free browsing."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Scan. Know. Swap Smarter.",
+    "button": "Download now"
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 MxJ Digital",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "contact": "Contact Support",
+    "sources": "Sources"
+  },
+  "getPage": {
+    "title": "The app to eat better.",
+    "button": "Go to App Store",
+    "step1": "Tap the menu in the top right corner of the app.",
+    "step2": "Choose \"Open in browser\".",
+    "step3Start": "Then tap",
+    "step3Bold": "Go to App Store",
+    "step3End": "above."
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français"
+  }
+}

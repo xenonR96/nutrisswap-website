@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/nutriswap/id6745822109';
 
 export const GetPage = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     window.location.href = APP_STORE_URL;
   }, []);
@@ -13,7 +16,6 @@ export const GetPage = () => {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-4">
-      {/* External link icon in top right */}
       <div className="absolute top-8 right-8">
         <div className="w-12 h-12 bg-blue-400 rounded-xl flex items-center justify-center">
           <svg
@@ -35,7 +37,6 @@ export const GetPage = () => {
       </div>
 
       <div className="text-center max-w-md mx-auto">
-        {/* Logo */}
         <div className="mb-8">
           <div className="w-16 h-16 bg-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-sm overflow-hidden">
             <img
@@ -47,17 +48,13 @@ export const GetPage = () => {
           <h1 className="text-2xl font-bold">NutriSwap</h1>
         </div>
 
-        {/* Main heading */}
-        <h2 className="text-4xl font-bold mb-8 leading-tight">
-          The App to Eat Better.
-        </h2>
+        <h2 className="text-4xl font-bold mb-8 leading-tight">{t('getPage.title')}</h2>
 
-        {/* App Store button */}
         <button
           onClick={handleAppStoreClick}
           className="bg-white text-black px-8 py-4 rounded-full font-semibold text-lg mb-12 hover:bg-gray-100 transition-colors"
         >
-          Go to App Store
+          {t('getPage.button')}
         </button>
 
         <div className="bg-white text-black rounded-2xl p-6 text-left">
@@ -65,19 +62,19 @@ export const GetPage = () => {
             <span className="inline-flex items-center justify-center w-6 h-6 bg-black text-white rounded-full text-sm mr-3">
               1
             </span>
-            Tap the menu in the top right corner of the app.
+            {t('getPage.step1')}
           </p>
           <p className="mb-4">
             <span className="inline-flex items-center justify-center w-6 h-6 bg-black text-white rounded-full text-sm mr-3">
               2
             </span>
-            Choose “Open in browser”.
+            {t('getPage.step2')}
           </p>
           <p>
             <span className="inline-flex items-center justify-center w-6 h-6 bg-black text-white rounded-full text-sm mr-3">
               3
             </span>
-            Then tap <strong>Go to App Store</strong> above.
+            {t('getPage.step3Start')} <strong>{t('getPage.step3Bold')}</strong> {t('getPage.step3End')}
           </p>
         </div>
       </div>

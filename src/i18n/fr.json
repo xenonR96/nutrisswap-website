@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "howItWorks": "Comment ça marche",
+    "features": "Fonctionnalités",
+    "faq": "FAQ",
+    "download": "Télécharger"
+  },
+  "banner": "Disponible sur l'App Store",
+  "hero": {
+    "title": "Scannez. Comprenez. Choisissez mieux.",
+    "subtitle": "Pointez votre appareil photo vers un code-barres et obtenez un score NutriSwap instantané, le détail des ingrédients et de meilleures alternatives.",
+    "downloadAlt": "Télécharger sur l'App Store",
+    "screenshotsAlt": "Captures d'écran du scan NutriSwap"
+  },
+  "howItWorks": {
+    "title": "Comment fonctionne NutriSwap",
+    "step1Title": "Scannez n'importe quel produit",
+    "step1Desc": "Tenez votre téléphone au-dessus du code-barres — en moins d'une seconde.",
+    "step2Title": "Analyse instantanée",
+    "step2Desc": "Consultez votre score NutriSwap, le détail nutritionnel, les ingrédients et vos alertes personnalisées.",
+    "step3Title": "Trouvez de meilleurs produits",
+    "step3Desc": "Découvrez des alternatives plus saines à acheter tout de suite."
+  },
+  "features": {
+    "title": "Tout ce que vous obtenez après un scan",
+    "scoreTitle": "Score NutriSwap",
+    "scoreDesc": "Une note claire de 0 à 100 pour savoir instantanément si un produit est excellent, bon, à limiter ou à éviter.",
+    "breakdownTitle": "Détail complet",
+    "breakdownDesc": "Huiles de graines, profil de transformation, sucres ajoutés, additifs, nutrition et score éco — le tout en un coup d'œil.",
+    "alertsTitle": "Alertes personnalisées",
+    "alertsDesc": "Soyez averti des allergènes, huiles de graines, additifs et métaux lourds selon vos préférences.",
+    "ingredientsTitle": "Explorateur d'ingrédients",
+    "ingredientsDesc": "Touchez un ingrédient pour comprendre ce que c'est, pourquoi c'est important et quels effets il peut avoir.",
+    "alternativesTitle": "Meilleurs produits à acheter",
+    "alternativesDesc": "Découvrez des alternatives du catalogue avec un meilleur score — disponibles en magasin.",
+    "analysisTitle": "Analyse NutriSwap",
+    "breakdownItems": {
+      "seedOils": "Huiles de graines",
+      "processing": "Profil de transformation",
+      "sugars": "Sucres ajoutés ou synthétiques",
+      "additives": "Additifs"
+    }
+  },
+  "why": {
+    "title": "Pourquoi NutriSwap facilite vos courses",
+    "scanTitle": "Du code-barres à la clarté en quelques secondes",
+    "scanItems": [
+      "Scannez n'importe quel code-barres et obtenez un score NutriSwap instantané",
+      "Voyez les huiles de graines, le niveau de transformation, les sucres et les additifs d'un coup d'œil",
+      "Recevez des alertes personnalisées pour les allergènes et ingrédients à éviter",
+      "Explorez chaque ingrédient avec des explications claires et pédagogiques",
+      "Trouvez de meilleurs produits sans comparer les étiquettes pendant des minutes"
+    ],
+    "everyoneTitle": "Conçu pour les vrais acheteurs",
+    "everyoneItems": [
+      "Des allergies ? Alertes instantanées pour les ingrédients cachés",
+      "Vous évitez les huiles de graines ou additifs ? NutriSwap les signale automatiquement",
+      "Vous faites les courses pour votre famille ? Scannez une fois et décidez en confiance",
+      "Juste curieux ? Explorez les ingrédients sans pression"
+    ],
+    "videoAlt": "Démo du scan code-barres NutriSwap",
+    "imageAlt": "Personnes faisant des choix alimentaires plus sains"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "question": "Comment fonctionne le scanner de code-barres ?",
+        "answer": "Pointez simplement l'appareil photo de votre téléphone vers le code-barres. NutriSwap recherche le produit et affiche votre score, le détail, les ingrédients et les alertes en quelques secondes."
+      },
+      {
+        "question": "Qu'est-ce que le score NutriSwap ?",
+        "answer": "Le score NutriSwap évalue les produits sur une échelle de 0 à 100 selon la transformation, les ingrédients, la nutrition et plus encore. Excellent, Bon, À limiter ou À éviter — vous savez tout de suite."
+      },
+      {
+        "question": "Que montre le détail après un scan ?",
+        "answer": "Après chaque scan, vous voyez les huiles de graines, le profil de transformation (NOVA), les sucres ajoutés ou synthétiques, les additifs, la nutrition et le score éco."
+      },
+      {
+        "question": "Puis-je recevoir des alertes pour allergènes et additifs ?",
+        "answer": "Oui. Définissez vos préférences et NutriSwap vous avertit des allergènes, huiles de graines, additifs et métaux lourds à chaque scan."
+      },
+      {
+        "question": "NutriSwap suggère-t-il de meilleurs produits ?",
+        "answer": "Oui. Quand un produit a un score faible, NutriSwap propose de meilleures alternatives du catalogue à la place."
+      },
+      {
+        "question": "D'où viennent les données produits ?",
+        "answer": "Nous utilisons Open Food Facts et des bases nutritionnelles fiables, combinées à l'analyse NutriSwap."
+      },
+      {
+        "question": "Puis-je rechercher manuellement si le scan ne fonctionne pas ?",
+        "answer": "Oui. Vous pouvez saisir un nom de produit ou un numéro de code-barres pour le rechercher manuellement."
+      },
+      {
+        "question": "NutriSwap est-il gratuit ?",
+        "answer": "Vous pouvez commencer avec un essai gratuit pour scanner et explorer. Un abonnement débloque l'accès complet, les insights personnalisés et une navigation sans publicité."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Scannez. Comprenez. Échangez plus intelligemment.",
+    "button": "Télécharger maintenant"
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 MxJ Digital",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité",
+    "contact": "Contacter le support",
+    "sources": "Sources"
+  },
+  "getPage": {
+    "title": "L'app pour mieux manger.",
+    "button": "Aller sur l'App Store",
+    "step1": "Touchez le menu en haut à droite de l'application.",
+    "step2": "Choisissez « Ouvrir dans le navigateur ».",
+    "step3Start": "Puis touchez",
+    "step3Bold": "Aller sur l'App Store",
+    "step3End": "ci-dessus."
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français"
+  }
+}

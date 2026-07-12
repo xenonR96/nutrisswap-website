@@ -131,9 +131,9 @@ function HomePage() {
 
             <div className="flex items-center justify-center lg:justify-end px-4 sm:px-6 lg:px-6">
               <img
-                src="/hero-scan-mockup.png"
+                src="/hero-scan-mockup.png?v=2"
                 alt={t('hero.screenshotsAlt')}
-                className="w-full max-w-md lg:max-w-lg h-auto"
+                className="w-full max-w-sm sm:max-w-md lg:max-w-xl h-auto"
               />
             </div>
           </div>

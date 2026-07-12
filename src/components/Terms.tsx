@@ -40,7 +40,7 @@ export const Terms = () => {
           </div>
           <button 
             onClick={handleDownloadClick}
-            className="px-6 py-2.5 bg-emerald-500 text-white rounded-xl font-semibold hover:bg-emerald-600 transition-colors shadow-sm"
+            className="px-6 py-2.5 bg-brand-primary text-white rounded-xl font-semibold hover:bg-brand-primary-hover transition-colors shadow-sm"
           >
             Download
           </button>

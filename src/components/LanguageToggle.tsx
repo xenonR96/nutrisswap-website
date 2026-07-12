@@ -15,7 +15,7 @@ export const LanguageToggle = () => {
         onClick={() => setLanguage('en')}
         className={`px-3 py-1.5 transition-colors ${
           i18n.language === 'en'
-            ? 'bg-emerald-500 text-white'
+            ? 'bg-brand-primary text-white'
             : 'bg-white text-gray-600 hover:bg-gray-50'
         }`}
       >
@@ -25,7 +25,7 @@ export const LanguageToggle = () => {
         onClick={() => setLanguage('fr')}
         className={`px-3 py-1.5 transition-colors ${
           i18n.language === 'fr'
-            ? 'bg-emerald-500 text-white'
+            ? 'bg-brand-primary text-white'
             : 'bg-white text-gray-600 hover:bg-gray-50'
         }`}
       >

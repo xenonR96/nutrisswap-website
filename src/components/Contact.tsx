@@ -40,7 +40,7 @@ export const Contact = () => {
           </div>
           <button 
             onClick={() => setIsModalOpen(true)}
-            className="px-6 py-2.5 bg-emerald-500 text-white rounded-xl font-semibold hover:bg-emerald-600 transition-colors shadow-sm"
+            className="px-6 py-2.5 bg-brand-primary text-white rounded-xl font-semibold hover:bg-brand-primary-hover transition-colors shadow-sm"
           >
             Download
           </button>
@@ -61,7 +61,7 @@ export const Contact = () => {
                   id="subject"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-primary"
                   required
                 />
               </div>
@@ -74,13 +74,13 @@ export const Contact = () => {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   rows={6}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-primary"
                   required
                 />
               </div>
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-emerald-500 text-white rounded-xl font-semibold hover:bg-emerald-600 transition-colors"
+                className="w-full px-6 py-3 bg-brand-primary text-white rounded-xl font-semibold hover:bg-brand-primary-hover transition-colors"
               >
                 Send Message
               </button>

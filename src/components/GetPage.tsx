@@ -38,7 +38,7 @@ export const GetPage = () => {
 
       <div className="text-center max-w-md mx-auto">
         <div className="mb-8">
-          <div className="w-16 h-16 bg-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-sm overflow-hidden">
+          <div className="w-16 h-16 bg-brand-primary rounded-xl flex items-center justify-center mx-auto mb-4 shadow-sm overflow-hidden">
             <img
               src="/app_icon.png"
               alt="NutriSwap Logo"

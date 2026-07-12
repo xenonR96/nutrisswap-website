@@ -19,7 +19,7 @@ export const ComingSoonModal: React.FC<ComingSoonModalProps> = ({ isOpen, onClos
           <X size={24} />
         </button>
         <div className="text-center">
-          <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 bg-brand-primary/15 rounded-full flex items-center justify-center mx-auto mb-4">
             <span className="text-3xl">✨</span>
           </div>
           <h3 className="text-2xl font-bold text-gray-900 mb-2">Get NutriSwap</h3>
@@ -30,7 +30,7 @@ export const ComingSoonModal: React.FC<ComingSoonModalProps> = ({ isOpen, onClos
             href="https://apps.apple.com/app/nutriswap/id6745822109"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full px-6 py-2.5 bg-emerald-500 text-white rounded-xl font-semibold hover:bg-emerald-600 transition-colors text-center"
+            className="block w-full px-6 py-2.5 bg-brand-primary text-white rounded-xl font-semibold hover:bg-brand-primary-hover transition-colors text-center"
           >
             Download on the App Store
           </a>

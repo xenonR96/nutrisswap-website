@@ -34,6 +34,12 @@
     "alternativesTitle": "Better Products to Buy",
     "alternativesDesc": "See catalog alternatives with higher scores — available at stores near you.",
     "analysisTitle": "NutriSwap Analysis",
+    "ratings": {
+      "excellent": "Excellent",
+      "good": "Good",
+      "limit": "Limit",
+      "avoid": "Avoid"
+    },
     "breakdownItems": {
       "seedOils": "Seed Oils",
       "processing": "Processing Profile",

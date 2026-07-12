@@ -34,6 +34,12 @@
     "alternativesTitle": "Meilleurs produits à acheter",
     "alternativesDesc": "Découvrez des alternatives du catalogue avec un meilleur score — disponibles en magasin.",
     "analysisTitle": "Analyse NutriSwap",
+    "ratings": {
+      "excellent": "Excellent",
+      "good": "Bon",
+      "limit": "À limiter",
+      "avoid": "À éviter"
+    },
     "breakdownItems": {
       "seedOils": "Huiles de graines",
       "processing": "Profil de transformation",

@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Logo = () => (
   <div className="flex items-center gap-2">
-    <div className="w-10 h-10 bg-emerald-500 rounded-xl flex items-center justify-center shadow-sm overflow-hidden">
+    <div className="w-10 h-10 bg-brand-primary rounded-xl flex items-center justify-center shadow-sm overflow-hidden">
       <img
         src="/app_icon.png"
         alt="NutriSwap Logo"

@@ -130,7 +130,7 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="relative flex items-end justify-center lg:justify-end px-4 sm:px-6 lg:px-0 bg-white overflow-hidden rounded-br-[3rem] sm:rounded-br-[4rem] lg:rounded-br-[5rem] xl:rounded-br-[6rem] min-h-[360px] lg:min-h-0">
+          <div className="relative flex items-end justify-center lg:justify-end px-4 sm:px-6 lg:px-0 overflow-hidden rounded-br-[3rem] sm:rounded-br-[4rem] lg:rounded-br-[5rem] xl:rounded-br-[6rem] min-h-[360px] lg:min-h-0">
             <img
               src="/hero-scan-mockup.png?v=2"
               alt={t('hero.screenshotsAlt')}

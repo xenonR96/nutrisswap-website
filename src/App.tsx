@@ -110,31 +110,37 @@ function HomePage() {
       </div>
 
       <main className="flex-grow">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-primary/15 text-brand-primary text-sm font-medium mb-6">
+        {/* Hero — Olive-style split: copy left, phone mockup right */}
+        <section className="relative overflow-hidden bg-brand-background">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[520px] lg:min-h-[640px]">
+            <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-10 py-14 lg:py-20 lg:pr-8">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-primary/15 text-brand-primary text-sm font-medium mb-6 w-fit">
                 <ScanLine className="w-4 h-4" />
                 NutriSwap Scan
               </div>
-              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 leading-[1.05] tracking-tight">
                 {t('hero.title')}
               </h1>
-              <p className="text-lg sm:text-xl text-gray-700 mb-8">{t('hero.subtitle')}</p>
-              <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
+              <p className="text-lg sm:text-xl text-gray-600 mb-10 max-w-xl leading-relaxed">
+                {t('hero.subtitle')}
+              </p>
+              <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="w-fit">
                 <AppStoreBadge />
               </a>
             </div>
-            <div className="relative">
+
+            <div className="relative bg-black flex items-end justify-center lg:justify-end overflow-hidden min-h-[340px] sm:min-h-[420px] lg:min-h-0">
               <img
-                src="/screenshots.png"
+                src="/hero-scan-mockup.png"
                 alt={t('hero.screenshotsAlt')}
-                className="w-full h-auto rounded-card shadow-card border border-gray-200/60"
+                className="w-full max-w-md sm:max-w-lg lg:max-w-none lg:w-[108%] xl:w-[115%] h-auto object-contain object-bottom lg:object-bottom lg:translate-x-4 xl:translate-x-8"
               />
             </div>
           </div>
+        </section>
 
-          <div id="how-it-works" className="mt-24 mb-16 scroll-mt-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+          <div id="how-it-works" className="mt-20 lg:mt-24 mb-16 scroll-mt-24">
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 text-gray-900">
               {t('howItWorks.title')}
             </h2>

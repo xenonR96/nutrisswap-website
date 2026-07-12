@@ -13,7 +13,7 @@ export const LanguageToggle = () => {
     <div className="flex items-center rounded-lg border border-gray-200 overflow-hidden text-sm font-medium">
       <button
         onClick={() => setLanguage('en')}
-        className={`px-3 py-1.5 transition-colors ${
+        className={`px-2.5 sm:px-3 py-1.5 transition-colors ${
           i18n.language === 'en'
             ? 'bg-brand-primary text-white'
             : 'bg-white text-gray-600 hover:bg-gray-50'
@@ -23,7 +23,7 @@ export const LanguageToggle = () => {
       </button>
       <button
         onClick={() => setLanguage('fr')}
-        className={`px-3 py-1.5 transition-colors ${
+        className={`px-2.5 sm:px-3 py-1.5 transition-colors ${
           i18n.language === 'fr'
             ? 'bg-brand-primary text-white'
             : 'bg-white text-gray-600 hover:bg-gray-50'

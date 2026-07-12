@@ -70,8 +70,8 @@ function HomePage() {
       <ComingSoonModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
       <nav className="bg-white border-b border-gray-200/80 sticky top-0 z-40">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-6 lg:gap-8 min-w-0">
+        <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-2 sm:gap-4">
+          <div className="flex items-center gap-4 lg:gap-8 min-w-0">
             <Logo />
             <div className="hidden md:flex items-center gap-6">
               <button
@@ -94,11 +94,11 @@ function HomePage() {
               </button>
             </div>
           </div>
-          <div className="flex items-center gap-3 shrink-0">
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             <LanguageToggle />
             <a
               href={APP_STORE_URL}
-              className="px-4 sm:px-6 py-2.5 bg-brand-primary text-white rounded-xl font-semibold hover:bg-brand-primary-hover transition-colors shadow-sm text-sm sm:text-base"
+              className="px-3 sm:px-6 py-2 sm:py-2.5 bg-brand-primary text-white rounded-xl font-semibold hover:bg-brand-primary-hover transition-colors shadow-sm text-xs sm:text-base whitespace-nowrap"
             >
               {t('nav.download')}
             </a>
@@ -106,47 +106,47 @@ function HomePage() {
         </div>
       </nav>
 
-      <div className="bg-brand-primary text-white py-2 text-center text-sm font-medium">
+      <div className="bg-brand-primary text-white py-2 px-3 text-center text-xs sm:text-sm font-medium">
         <p>{t('banner')}</p>
       </div>
 
       <main className="flex-grow">
         {/* Hero — Olive-style split: copy left, phone mockup right */}
         <section className="relative overflow-hidden bg-brand-background lg:grid lg:grid-cols-2 lg:min-h-[640px] xl:min-h-[720px]">
-          <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-10 xl:px-16 py-14 lg:py-16 max-w-7xl lg:max-w-none lg:ml-auto lg:w-full">
-            <div className="max-w-xl lg:max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-avoid/15 text-brand-avoid text-sm font-medium mb-6 w-fit">
+          <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-10 xl:px-16 pt-8 pb-4 sm:py-10 lg:py-16 max-w-7xl lg:max-w-none lg:ml-auto lg:w-full">
+            <div className="max-w-xl lg:max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-avoid/15 text-brand-avoid text-xs sm:text-sm font-medium mb-4 sm:mb-6 w-fit mx-auto lg:mx-0">
                 <ScanLine className="w-4 h-4" />
                 {t('hero.badge')}
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 leading-[1.05] tracking-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-4 sm:mb-6 leading-[1.08] tracking-tight">
                 {t('hero.title')}
               </h1>
-              <p className="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed">
+              <p className="text-base sm:text-xl text-gray-600 mb-6 sm:mb-10 leading-relaxed">
                 {t('hero.subtitle')}
               </p>
-              <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="w-fit">
-                <AppStoreBadge />
+              <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="inline-block mx-auto lg:mx-0">
+                <AppStoreBadge className="h-12 sm:h-14 md:h-16 hover:opacity-90 transition-opacity" />
               </a>
             </div>
           </div>
 
-          <div className="relative flex items-end justify-center lg:justify-end px-4 sm:px-6 lg:px-0 overflow-hidden rounded-br-[3rem] sm:rounded-br-[4rem] lg:rounded-br-[5rem] xl:rounded-br-[6rem] min-h-[360px] lg:min-h-0">
+          <div className="relative flex items-end justify-center lg:justify-end px-2 sm:px-6 lg:px-0 pb-6 lg:pb-0 overflow-hidden rounded-br-[2rem] sm:rounded-br-[4rem] lg:rounded-br-[5rem] xl:rounded-br-[6rem]">
             <img
               src="/hero-scan-mockup.png?v=2"
               alt={t('hero.screenshotsAlt')}
-              className="w-full max-w-md sm:max-w-xl lg:max-w-none lg:w-[115%] xl:w-[122%] h-auto object-contain object-bottom pointer-events-none select-none"
+              className="w-full max-w-[260px] sm:max-w-md lg:max-w-none lg:w-[115%] xl:w-[122%] h-auto object-contain object-bottom pointer-events-none select-none"
             />
           </div>
         </section>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-          <div id="how-it-works" className="mt-20 lg:mt-24 mb-16 scroll-mt-24">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 text-gray-900">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16">
+          <div id="how-it-works" className="mt-12 sm:mt-20 lg:mt-24 mb-10 sm:mb-16 scroll-mt-24">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-8 sm:mb-16 text-gray-900">
               {t('howItWorks.title')}
             </h2>
-            <div className="bg-white p-8 rounded-card shadow-card border border-gray-200/60">
-              <div className="grid md:grid-cols-3 gap-12">
+            <div className="bg-white p-5 sm:p-8 rounded-card shadow-card border border-gray-200/60">
+              <div className="grid md:grid-cols-3 gap-8 sm:gap-12">
                 {[
                   { icon: ScanLine, title: t('howItWorks.step1Title'), desc: t('howItWorks.step1Desc') },
                   { icon: BarChart3, title: t('howItWorks.step2Title'), desc: t('howItWorks.step2Desc') },
@@ -164,8 +164,8 @@ function HomePage() {
             </div>
           </div>
 
-          <div id="features" className="mb-16 scroll-mt-24">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6 text-gray-900">
+          <div id="features" className="mb-10 sm:mb-16 scroll-mt-24">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-4 sm:mb-6 text-gray-900">
               {t('features.title')}
             </h2>
 
@@ -180,7 +180,7 @@ function HomePage() {
               ))}
             </div>
 
-            <div className="flex flex-wrap justify-center gap-2 mb-12">
+            <div className="flex flex-wrap justify-center gap-2 mb-8 sm:mb-12">
               {breakdownItems.map((item) => (
                 <span
                   key={item}
@@ -220,14 +220,14 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 text-gray-900">
+          <div className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-8 sm:mb-16 text-gray-900">
               {t('why.title')}
             </h2>
-            <div className="space-y-12">
-              <div className="bg-white p-8 rounded-card shadow-card border border-gray-200/60 grid md:grid-cols-2 gap-12 items-center">
-                <div className="p-4 sm:p-8">
-                  <h3 className="text-2xl font-semibold mb-6 text-gray-900">{t('why.scanTitle')}</h3>
+            <div className="space-y-8 sm:space-y-12">
+              <div className="bg-white p-5 sm:p-8 rounded-card shadow-card border border-gray-200/60 grid md:grid-cols-2 gap-6 sm:gap-12 items-center">
+                <div className="p-0 sm:p-4 md:p-8">
+                  <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-gray-900">{t('why.scanTitle')}</h3>
                   <ul className="space-y-4">
                     {(t('why.scanItems', { returnObjects: true }) as string[]).map((item) => (
                       <li key={item} className="flex items-start gap-3">
@@ -237,7 +237,7 @@ function HomePage() {
                     ))}
                   </ul>
                 </div>
-                <div className="p-4 sm:p-8">
+                <div className="p-0 sm:p-4 md:p-8">
                   <div className="aspect-square overflow-hidden rounded-2xl bg-white shadow-[0_2px_5px_rgba(0,0,0,0.05)] border border-gray-200/60">
                     <video
                       src="/onboarding_insights.mov"
@@ -254,8 +254,8 @@ function HomePage() {
 
               <UpfProductShowcase />
 
-              <div className="bg-white p-8 rounded-card shadow-card border border-gray-200/60 grid md:grid-cols-2 gap-12 items-center">
-                <div className="p-4 sm:p-8 order-2 md:order-1">
+              <div className="bg-white p-5 sm:p-8 rounded-card shadow-card border border-gray-200/60 grid md:grid-cols-2 gap-6 sm:gap-12 items-center">
+                <div className="p-0 sm:p-4 md:p-8 order-2 md:order-1">
                   <div className="aspect-square overflow-hidden rounded-card shadow-card">
                     <img
                       src="/whofor.png"
@@ -264,8 +264,8 @@ function HomePage() {
                     />
                   </div>
                 </div>
-                <div className="p-4 sm:p-8 order-1 md:order-2">
-                  <h3 className="text-2xl font-semibold mb-6 text-gray-900">{t('why.everyoneTitle')}</h3>
+                <div className="p-0 sm:p-4 md:p-8 order-1 md:order-2">
+                  <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-gray-900">{t('why.everyoneTitle')}</h3>
                   <ul className="space-y-4">
                     {(t('why.everyoneItems', { returnObjects: true }) as string[]).map((item) => (
                       <li key={item} className="flex items-start gap-3">

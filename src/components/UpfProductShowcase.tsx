@@ -63,26 +63,26 @@ export function UpfProductShowcase() {
   const product = products[activeIndex];
 
   return (
-    <div className="bg-white p-5 sm:p-6 rounded-card shadow-card border border-gray-200/60">
-      <div className="text-center max-w-2xl mx-auto mb-5">
-        <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-900">{t('why.upfBox.title')}</h3>
-        <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{t('why.upfBox.subtitle')}</p>
+    <div className="bg-white p-4 sm:p-6 rounded-card shadow-card border border-gray-200/60">
+      <div className="text-center max-w-2xl mx-auto mb-4 sm:mb-5">
+        <h3 className="text-lg sm:text-2xl font-semibold mb-2 text-gray-900">{t('why.upfBox.title')}</h3>
+        <p className="text-sm text-gray-600 leading-relaxed">{t('why.upfBox.subtitle')}</p>
       </div>
 
       <div className="w-full">
         <div
           key={product.id}
-          className="grid grid-cols-[minmax(160px,38%)_1fr] sm:grid-cols-[220px_1fr] md:grid-cols-[260px_1fr] gap-4 sm:gap-5 items-start transition-opacity duration-300"
+          className="grid grid-cols-1 sm:grid-cols-[200px_1fr] md:grid-cols-[260px_1fr] gap-4 sm:gap-5 items-start transition-opacity duration-300"
         >
-          <div className="w-full">
-            <div className="h-48 sm:h-52 md:h-56 overflow-hidden rounded-xl bg-gray-50 border border-gray-200/60">
+          <div className="w-full max-w-[200px] mx-auto sm:max-w-none sm:mx-0">
+            <div className="h-40 sm:h-52 md:h-56 overflow-hidden rounded-xl bg-gray-50 border border-gray-200/60">
               <img
                 src={product.image}
                 alt={product.name}
                 className="w-full h-full object-contain p-2"
               />
             </div>
-            <p className="mt-2 text-xs font-semibold text-gray-900 leading-snug line-clamp-2">
+            <p className="mt-2 text-center sm:text-left text-xs font-semibold text-gray-900 leading-snug line-clamp-2">
               {product.name}
             </p>
           </div>

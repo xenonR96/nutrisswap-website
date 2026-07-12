@@ -20,6 +20,7 @@ import { GetPage } from './components/GetPage';
 import { ComingSoonModal } from './components/ComingSoonModal';
 import { LanguageToggle } from './components/LanguageToggle';
 import { AppStoreBadge } from './components/AppStoreBadge';
+import { UpfProductShowcase } from './components/UpfProductShowcase';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/nutriswap/id6745822109';
 
@@ -28,13 +29,6 @@ const RATING_STYLES = {
   good: 'text-brand-good bg-brand-good/15',
   limit: 'text-brand-limit bg-brand-limit/15',
   avoid: 'text-brand-avoid bg-brand-avoid/15',
-} as const;
-
-const CHIP_STYLES = {
-  red: 'bg-red-500/15 text-red-600',
-  orange: 'bg-orange-500/20 text-orange-700',
-  yellow: 'bg-amber-200/60 text-amber-900',
-  gray: 'bg-gray-500/15 text-gray-600',
 } as const;
 
 function HomePage() {
@@ -258,79 +252,7 @@ function HomePage() {
                 </div>
               </div>
 
-              <div className="bg-white p-8 rounded-card shadow-card border border-gray-200/60">
-                <div className="text-center max-w-2xl mx-auto mb-10">
-                  <h3 className="text-2xl font-semibold mb-3 text-gray-900">{t('why.upfBox.title')}</h3>
-                  <p className="text-gray-600 leading-relaxed">{t('why.upfBox.subtitle')}</p>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-10 lg:gap-14 items-start">
-                  <div>
-                    <p className="text-sm font-semibold text-gray-900 mb-3">{t('why.upfBox.novaLabel')}</p>
-                    <div className="relative">
-                      <div className="flex h-2 rounded-full overflow-hidden">
-                        <div className="flex-1 bg-green-500" />
-                        <div className="flex-1 bg-green-500/75" />
-                        <div className="flex-1 bg-orange-500" />
-                        <div className="flex-1 bg-red-500/80" />
-                      </div>
-                      <div
-                        className="absolute -top-1 w-0 h-0 border-l-[5px] border-r-[5px] border-b-[7px] border-l-transparent border-r-transparent border-b-gray-500"
-                        style={{ left: '87.5%', transform: 'translateX(-50%)' }}
-                      />
-                    </div>
-                    <div className="flex justify-between text-xs text-gray-500 mt-3">
-                      <span>{t('why.upfBox.novaUnprocessed')}</span>
-                      <span>{t('why.upfBox.novaUltraProcessed')}</span>
-                    </div>
-                    <p className="mt-4 inline-flex px-3 py-1.5 rounded-full text-sm font-semibold text-brand-avoid bg-brand-avoid/15">
-                      {t('why.upfBox.novaExample')}
-                    </p>
-                  </div>
-
-                  <div className="space-y-6">
-                    <div>
-                      <div className="flex items-center justify-between gap-3 mb-3">
-                        <p className="text-sm font-semibold text-gray-900">{t('why.upfBox.seedOilsTitle')}</p>
-                        <span className="px-2.5 py-1 rounded-full text-xs font-semibold text-brand-avoid bg-brand-avoid/15">
-                          {t('why.upfBox.seedOilsStatus')}
-                        </span>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        {(t('why.upfBox.seedOilChips', { returnObjects: true }) as string[]).map((chip) => (
-                          <span
-                            key={chip}
-                            className="px-2.5 py-1.5 rounded-lg text-sm bg-orange-500/20 text-orange-700"
-                          >
-                            {chip}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div>
-                      <p className="text-sm font-semibold text-gray-900 mb-3">{t('why.upfBox.additivesTitle')}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {(t('why.upfBox.additiveChips', { returnObjects: true }) as Array<{ name: string; color: keyof typeof CHIP_STYLES }>).map((chip) => (
-                          <span
-                            key={chip.name}
-                            className={`px-2.5 py-1.5 rounded-lg text-sm font-medium ${CHIP_STYLES[chip.color]}`}
-                          >
-                            {chip.name}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="flex items-center justify-between gap-3 pt-1">
-                      <p className="text-sm font-semibold text-gray-900">{t('why.upfBox.processingTitle')}</p>
-                      <span className="px-2.5 py-1 rounded-full text-xs font-semibold text-brand-avoid bg-brand-avoid/15">
-                        {t('why.upfBox.processingStatus')}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <UpfProductShowcase />
 
               <div className="bg-white p-8 rounded-card shadow-card border border-gray-200/60 grid md:grid-cols-2 gap-12 items-center">
                 <div className="p-4 sm:p-8 order-2 md:order-1">

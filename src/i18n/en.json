@@ -73,18 +73,61 @@
       "novaLabel": "NOVA",
       "novaUnprocessed": "Unprocessed",
       "novaUltraProcessed": "Ultra-processed",
-      "novaExample": "NOVA 4 — Ultra-processed",
       "seedOilsTitle": "Seed Oils",
-      "seedOilsStatus": "Present",
+      "sugarsTitle": "Added or Synthetic Sugars",
       "additivesTitle": "Additives",
       "processingTitle": "Processing Profile",
-      "processingStatus": "High",
-      "seedOilChips": ["Sunflower oil", "Canola oil", "Soybean oil"],
-      "additiveChips": [
-        { "name": "E150d", "color": "orange" },
-        { "name": "E621", "color": "red" },
-        { "name": "E951", "color": "yellow" },
-        { "name": "E322", "color": "gray" }
+      "noneDetected": "None detected",
+      "products": [
+        {
+          "id": "oats",
+          "image": "/product-oats.png",
+          "name": "Bjorg — Oat Flakes",
+          "nova": 1,
+          "novaLabel": "NOVA 1 — Unprocessed or minimally processed",
+          "processingStatus": "Low",
+          "processingTone": "good",
+          "seedOilsStatus": "None detected",
+          "seedOilsTone": "good",
+          "seedOilChips": [],
+          "sugarChips": [],
+          "additiveChips": [],
+          "noneDetected": "None detected"
+        },
+        {
+          "id": "muesli",
+          "image": "/product-muesli.png",
+          "name": "Terres & Céréales — Crunchy Muesli",
+          "nova": 3,
+          "novaLabel": "NOVA 3 — Processed",
+          "processingStatus": "Medium",
+          "processingTone": "limit",
+          "seedOilsStatus": "Present",
+          "seedOilsTone": "avoid",
+          "seedOilChips": ["Sunflower oil"],
+          "sugarChips": ["Cane sugar", "Rice syrup"],
+          "additiveChips": [],
+          "noneDetected": "None detected"
+        },
+        {
+          "id": "lion",
+          "image": "/product-lion.png",
+          "name": "Nestlé Lion — Caramel & Chocolate",
+          "nova": 4,
+          "novaLabel": "NOVA 4 — Ultra-processed",
+          "processingStatus": "High",
+          "processingTone": "avoid",
+          "seedOilsStatus": "Present",
+          "seedOilsTone": "avoid",
+          "seedOilChips": ["Sunflower oil", "Palm oil"],
+          "sugarChips": ["Glucose syrup", "Sugar"],
+          "additiveChips": [
+            { "name": "Calcium carbonate", "color": "gray" },
+            { "name": "Natural flavors", "color": "gray" },
+            { "name": "Sunflower lecithin", "color": "yellow" }
+          ],
+          "noneDetected": "None detected"
+        }
       ]
     }
   },

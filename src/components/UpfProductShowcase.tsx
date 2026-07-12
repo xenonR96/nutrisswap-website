@@ -37,8 +37,6 @@ type ProductData = {
   name: string;
   nova: 1 | 2 | 3 | 4;
   novaLabel: string;
-  processingStatus: string;
-  processingTone: StatusTone;
   seedOilsStatus: string;
   seedOilsTone: StatusTone;
   seedOilChips: string[];
@@ -47,7 +45,7 @@ type ProductData = {
   noneDetected: string;
 };
 
-const ROTATE_MS = 5000;
+const ROTATE_MS = 3500;
 
 export function UpfProductShowcase() {
   const { t } = useTranslation();
@@ -65,141 +63,117 @@ export function UpfProductShowcase() {
   const product = products[activeIndex];
 
   return (
-    <div className="bg-white p-8 rounded-card shadow-card border border-gray-200/60">
-      <div className="text-center max-w-2xl mx-auto mb-8">
-        <h3 className="text-2xl font-semibold mb-3 text-gray-900">{t('why.upfBox.title')}</h3>
-        <p className="text-gray-600 leading-relaxed">{t('why.upfBox.subtitle')}</p>
-      </div>
-
-      <div className="flex flex-wrap justify-center gap-2 mb-8">
-        {products.map((item, index) => (
-          <button
-            key={item.id}
-            type="button"
-            onClick={() => setActiveIndex(index)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-              index === activeIndex
-                ? 'bg-brand-primary text-white'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            {item.name.split('—')[0]?.trim() ?? item.name}
-          </button>
-        ))}
+    <div className="bg-white p-5 sm:p-6 rounded-card shadow-card border border-gray-200/60">
+      <div className="text-center max-w-2xl mx-auto mb-5">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-900">{t('why.upfBox.title')}</h3>
+        <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{t('why.upfBox.subtitle')}</p>
       </div>
 
       <div
         key={product.id}
-        className="grid md:grid-cols-[220px_1fr] lg:grid-cols-[260px_1fr] gap-8 lg:gap-12 items-start transition-opacity duration-300"
+        className="grid md:grid-cols-[140px_1fr] lg:grid-cols-[160px_1fr] gap-5 lg:gap-8 items-start transition-opacity duration-300"
       >
-        <div className="mx-auto md:mx-0 w-full max-w-[260px]">
-          <div className="aspect-[3/4] overflow-hidden rounded-2xl bg-gray-50 border border-gray-200/60 shadow-sm">
+        <div className="mx-auto md:mx-0 w-full max-w-[160px]">
+          <div className="h-36 sm:h-40 overflow-hidden rounded-xl bg-gray-50 border border-gray-200/60">
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-full object-contain p-3"
+              className="w-full h-full object-contain p-2"
             />
           </div>
-          <p className="mt-4 text-center md:text-left text-sm font-semibold text-gray-900 leading-snug">
+          <p className="mt-2 text-center md:text-left text-xs font-semibold text-gray-900 leading-snug line-clamp-2">
             {product.name}
           </p>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-4">
           <div>
-            <p className="text-sm font-semibold text-gray-900 mb-3">{t('why.upfBox.novaLabel')}</p>
+            <p className="text-sm font-semibold text-gray-900 mb-2">{t('why.upfBox.novaLabel')}</p>
             <div className="relative max-w-md">
-              <div className="flex h-2 rounded-full overflow-hidden">
+              <div className="flex h-1.5 rounded-full overflow-hidden">
                 <div className="flex-1 bg-green-500" />
                 <div className="flex-1 bg-green-500/75" />
                 <div className="flex-1 bg-orange-500" />
                 <div className="flex-1 bg-red-500/80" />
               </div>
               <div
-                className="absolute -top-1 w-0 h-0 border-l-[5px] border-r-[5px] border-b-[7px] border-l-transparent border-r-transparent border-b-gray-500 transition-all duration-500"
+                className="absolute -top-1 w-0 h-0 border-l-[4px] border-r-[4px] border-b-[6px] border-l-transparent border-r-transparent border-b-gray-500 transition-all duration-500"
                 style={{ left: NOVA_POSITIONS[product.nova], transform: 'translateX(-50%)' }}
               />
             </div>
-            <div className="flex justify-between text-xs text-gray-500 mt-3 max-w-md">
+            <div className="flex justify-between text-xs text-gray-500 mt-2 max-w-md">
               <span>{t('why.upfBox.novaUnprocessed')}</span>
               <span>{t('why.upfBox.novaUltraProcessed')}</span>
             </div>
-            <p className={`mt-4 inline-flex px-3 py-1.5 rounded-full text-sm font-semibold ${NOVA_STYLES[product.nova]}`}>
+            <p className={`mt-2 inline-flex px-2.5 py-1 rounded-full text-xs font-semibold ${NOVA_STYLES[product.nova]}`}>
               {product.novaLabel}
             </p>
           </div>
 
           <div>
-            <div className="flex items-center justify-between gap-3 mb-3">
+            <div className="flex items-center justify-between gap-3 mb-2">
               <p className="text-sm font-semibold text-gray-900">{t('why.upfBox.seedOilsTitle')}</p>
-              <span className={`px-2.5 py-1 rounded-full text-xs font-semibold ${STATUS_STYLES[product.seedOilsTone]}`}>
+              <span className={`px-2 py-0.5 rounded-full text-xs font-semibold ${STATUS_STYLES[product.seedOilsTone]}`}>
                 {product.seedOilsStatus}
               </span>
             </div>
             {product.seedOilChips.length > 0 ? (
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5">
                 {product.seedOilChips.map((chip) => (
-                  <span key={chip} className="px-2.5 py-1.5 rounded-lg text-sm bg-orange-500/20 text-orange-700">
+                  <span key={chip} className="px-2 py-1 rounded-lg text-xs bg-orange-500/20 text-orange-700">
                     {chip}
                   </span>
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-gray-500">{product.noneDetected}</p>
+              <p className="text-xs text-gray-500">{product.noneDetected}</p>
             )}
           </div>
 
           <div>
-            <p className="text-sm font-semibold text-gray-900 mb-3">{t('why.upfBox.sugarsTitle')}</p>
+            <p className="text-sm font-semibold text-gray-900 mb-2">{t('why.upfBox.sugarsTitle')}</p>
             {product.sugarChips.length > 0 ? (
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5">
                 {product.sugarChips.map((chip) => (
-                  <span key={chip} className="px-2.5 py-1.5 rounded-lg text-sm bg-orange-500/20 text-orange-700">
+                  <span key={chip} className="px-2 py-1 rounded-lg text-xs bg-orange-500/20 text-orange-700">
                     {chip}
                   </span>
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-gray-500">{product.noneDetected}</p>
+              <p className="text-xs text-gray-500">{product.noneDetected}</p>
             )}
           </div>
 
           <div>
-            <p className="text-sm font-semibold text-gray-900 mb-3">{t('why.upfBox.additivesTitle')}</p>
+            <p className="text-sm font-semibold text-gray-900 mb-2">{t('why.upfBox.additivesTitle')}</p>
             {product.additiveChips.length > 0 ? (
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5">
                 {product.additiveChips.map((chip) => (
                   <span
                     key={chip.name}
-                    className={`px-2.5 py-1.5 rounded-lg text-sm font-medium ${CHIP_STYLES[chip.color]}`}
+                    className={`px-2 py-1 rounded-lg text-xs font-medium ${CHIP_STYLES[chip.color]}`}
                   >
                     {chip.name}
                   </span>
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-gray-500">{product.noneDetected}</p>
+              <p className="text-xs text-gray-500">{product.noneDetected}</p>
             )}
-          </div>
-
-          <div className="flex items-center justify-between gap-3 pt-1">
-            <p className="text-sm font-semibold text-gray-900">{t('why.upfBox.processingTitle')}</p>
-            <span className={`px-2.5 py-1 rounded-full text-xs font-semibold ${STATUS_STYLES[product.processingTone]}`}>
-              {product.processingStatus}
-            </span>
           </div>
         </div>
       </div>
 
-      <div className="flex justify-center gap-2 mt-8">
+      <div className="flex justify-center gap-2 mt-5">
         {products.map((item, index) => (
           <button
             key={item.id}
             type="button"
             onClick={() => setActiveIndex(index)}
             aria-label={item.name}
-            className={`h-2 rounded-full transition-all ${
-              index === activeIndex ? 'w-6 bg-brand-primary' : 'w-2 bg-gray-300 hover:bg-gray-400'
+            className={`h-1.5 rounded-full transition-all ${
+              index === activeIndex ? 'w-5 bg-brand-primary' : 'w-1.5 bg-gray-300 hover:bg-gray-400'
             }`}
           />
         ))}

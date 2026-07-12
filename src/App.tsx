@@ -111,9 +111,9 @@ function HomePage() {
 
       <main className="flex-grow">
         {/* Hero — Olive-style split: copy left, phone mockup right */}
-        <section className="relative overflow-hidden bg-brand-background">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-4 min-h-[520px] lg:min-h-[600px]">
-            <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-10 py-14 lg:py-16 lg:pr-4">
+        <section className="relative overflow-hidden bg-brand-background lg:grid lg:grid-cols-2 lg:min-h-[640px] xl:min-h-[720px]">
+          <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-10 xl:px-16 py-14 lg:py-16 max-w-7xl lg:max-w-none lg:ml-auto lg:w-full">
+            <div className="max-w-xl lg:max-w-2xl">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-primary/15 text-brand-primary text-sm font-medium mb-6 w-fit">
                 <ScanLine className="w-4 h-4" />
                 NutriSwap Scan
@@ -121,21 +121,21 @@ function HomePage() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 leading-[1.05] tracking-tight">
                 {t('hero.title')}
               </h1>
-              <p className="text-lg sm:text-xl text-gray-600 mb-10 max-w-xl leading-relaxed">
+              <p className="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed">
                 {t('hero.subtitle')}
               </p>
               <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="w-fit">
                 <AppStoreBadge />
               </a>
             </div>
+          </div>
 
-            <div className="flex items-center justify-center lg:justify-end px-4 sm:px-6 lg:px-6">
-              <img
-                src="/hero-scan-mockup.png?v=2"
-                alt={t('hero.screenshotsAlt')}
-                className="w-full max-w-sm sm:max-w-md lg:max-w-xl h-auto"
-              />
-            </div>
+          <div className="relative flex items-end justify-center lg:justify-end px-4 sm:px-6 lg:px-0 bg-white overflow-hidden rounded-br-[3rem] sm:rounded-br-[4rem] lg:rounded-br-[5rem] xl:rounded-br-[6rem] min-h-[360px] lg:min-h-0">
+            <img
+              src="/hero-scan-mockup.png?v=2"
+              alt={t('hero.screenshotsAlt')}
+              className="w-full max-w-md sm:max-w-xl lg:max-w-none lg:w-[115%] xl:w-[122%] h-auto object-contain object-bottom pointer-events-none select-none"
+            />
           </div>
         </section>
 

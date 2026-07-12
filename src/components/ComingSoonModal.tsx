@@ -67,6 +67,10 @@ export const ComingSoonModal: React.FC<ComingSoonModalProps> = ({ isOpen, onClos
     setErrorMessage('');
 
     try {
+      if (!supabase) {
+        throw new Error('Email signup is not configured');
+      }
+
       const { error } = await supabase
         .from('email_list')
         .insert([{ email }]);

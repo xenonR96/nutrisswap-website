@@ -5,10 +5,11 @@
     "faq": "FAQ",
     "download": "Download"
   },
-  "banner": "Available now on the App Store",
+  "banner": "Available now on the App Store — spot ultra-processed food in seconds",
   "hero": {
-    "title": "Scan. Know. Choose Better.",
-    "subtitle": "Point your camera at a barcode and get an instant NutriSwap score, ingredients breakdown, and smarter alternatives.",
+    "title": "Scan. Avoid Ultra-Processed.",
+    "subtitle": "NutriSwap helps you fight industrial foods — scan any barcode to see NOVA processing, seed oils, additives, and what to avoid, then find better alternatives.",
+    "badge": "Fight ultra-processed food",
     "downloadAlt": "Download on the App Store",
     "screenshotsAlt": "NutriSwap app scan screenshots"
   },
@@ -65,7 +66,27 @@
       "Just curious? Explore ingredients without pressure or guilt"
     ],
     "videoAlt": "NutriSwap barcode scan demo",
-    "imageAlt": "People making healthier food choices"
+    "imageAlt": "People making healthier food choices",
+    "upfBox": {
+      "title": "Spot ultra-processed food before it hits your cart",
+      "subtitle": "Every scan shows how processed a product really is — and flags the seed oils, sweeteners, and additives worth avoiding.",
+      "novaLabel": "NOVA",
+      "novaUnprocessed": "Unprocessed",
+      "novaUltraProcessed": "Ultra-processed",
+      "novaExample": "NOVA 4 — Ultra-processed",
+      "seedOilsTitle": "Seed Oils",
+      "seedOilsStatus": "Present",
+      "additivesTitle": "Additives",
+      "processingTitle": "Processing Profile",
+      "processingStatus": "High",
+      "seedOilChips": ["Sunflower oil", "Canola oil", "Soybean oil"],
+      "additiveChips": [
+        { "name": "E150d", "color": "orange" },
+        { "name": "E621", "color": "red" },
+        { "name": "E951", "color": "yellow" },
+        { "name": "E322", "color": "gray" }
+      ]
+    }
   },
   "faq": {
     "title": "Frequently Asked Questions",

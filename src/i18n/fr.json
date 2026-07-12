@@ -5,10 +5,11 @@
     "faq": "FAQ",
     "download": "Télécharger"
   },
-  "banner": "Disponible sur l'App Store",
+  "banner": "Disponible sur l'App Store — repérez l'ultra-transformé en quelques secondes",
   "hero": {
-    "title": "Scannez. Comprenez. Choisissez mieux.",
-    "subtitle": "Pointez votre appareil photo vers un code-barres et obtenez un score NutriSwap instantané, le détail des ingrédients et de meilleures alternatives.",
+    "title": "Scannez. Évitez l'ultra-transformé.",
+    "subtitle": "NutriSwap vous aide à combattre les aliments industriels — scannez un code-barres pour voir le NOVA, les huiles de graines, les additifs et quoi éviter, puis trouvez de meilleures alternatives.",
+    "badge": "Contre l'ultra-transformé",
     "downloadAlt": "Télécharger sur l'App Store",
     "screenshotsAlt": "Captures d'écran du scan NutriSwap"
   },
@@ -65,7 +66,27 @@
       "Juste curieux ? Explorez les ingrédients sans pression"
     ],
     "videoAlt": "Démo du scan code-barres NutriSwap",
-    "imageAlt": "Personnes faisant des choix alimentaires plus sains"
+    "imageAlt": "Personnes faisant des choix alimentaires plus sains",
+    "upfBox": {
+      "title": "Repérez l'ultra-transformé avant de l'ajouter au panier",
+      "subtitle": "Chaque scan montre le vrai niveau de transformation — et signale les huiles de graines, édulcorants et additifs à éviter.",
+      "novaLabel": "NOVA",
+      "novaUnprocessed": "Non transformé",
+      "novaUltraProcessed": "Ultra-transformé",
+      "novaExample": "NOVA 4 — Ultra-transformé",
+      "seedOilsTitle": "Huiles de graines",
+      "seedOilsStatus": "Présent",
+      "additivesTitle": "Additifs",
+      "processingTitle": "Profil de transformation",
+      "processingStatus": "Élevé",
+      "seedOilChips": ["Huile de tournesol", "Huile de colza", "Huile de soja"],
+      "additiveChips": [
+        { "name": "E150d", "color": "orange" },
+        { "name": "E621", "color": "red" },
+        { "name": "E951", "color": "yellow" },
+        { "name": "E322", "color": "gray" }
+      ]
+    }
   },
   "faq": {
     "title": "Questions fréquentes",

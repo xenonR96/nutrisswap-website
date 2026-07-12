@@ -131,11 +131,11 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="relative flex items-end justify-center lg:justify-end px-2 sm:px-6 lg:px-0 pb-6 lg:pb-0 overflow-hidden rounded-br-[2rem] sm:rounded-br-[4rem] lg:rounded-br-[5rem] xl:rounded-br-[6rem]">
+          <div className="relative flex items-end justify-center lg:justify-end -mt-3 sm:mt-0 px-0 sm:px-6 lg:px-0 pb-4 sm:pb-6 lg:pb-0 w-full overflow-hidden rounded-br-[2rem] sm:rounded-br-[4rem] lg:rounded-br-[5rem] xl:rounded-br-[6rem]">
             <img
               src="/hero-scan-mockup.png?v=2"
               alt={t('hero.screenshotsAlt')}
-              className="w-full max-w-[260px] sm:max-w-md lg:max-w-none lg:w-[115%] xl:w-[122%] h-auto object-contain object-bottom pointer-events-none select-none"
+              className="w-[94vw] max-w-[400px] sm:w-full sm:max-w-md lg:max-w-none lg:w-[115%] xl:w-[122%] h-auto object-contain object-bottom pointer-events-none select-none"
             />
           </div>
         </section>

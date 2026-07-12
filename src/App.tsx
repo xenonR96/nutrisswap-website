@@ -112,8 +112,8 @@ function HomePage() {
       <main className="flex-grow">
         {/* Hero — Olive-style split: copy left, phone mockup right */}
         <section className="relative overflow-hidden bg-brand-background">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[520px] lg:min-h-[640px]">
-            <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-10 py-14 lg:py-20 lg:pr-8">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-4 min-h-[520px] lg:min-h-[600px]">
+            <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-10 py-14 lg:py-16 lg:pr-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-primary/15 text-brand-primary text-sm font-medium mb-6 w-fit">
                 <ScanLine className="w-4 h-4" />
                 NutriSwap Scan
@@ -129,11 +129,11 @@ function HomePage() {
               </a>
             </div>
 
-            <div className="relative bg-black flex items-end justify-center lg:justify-end overflow-hidden min-h-[340px] sm:min-h-[420px] lg:min-h-0">
+            <div className="relative flex items-end justify-center lg:justify-end px-4 sm:px-6 lg:px-6">
               <img
                 src="/hero-scan-mockup.png"
                 alt={t('hero.screenshotsAlt')}
-                className="w-full max-w-md sm:max-w-lg lg:max-w-none lg:w-[108%] xl:w-[115%] h-auto object-contain object-bottom lg:object-bottom lg:translate-x-4 xl:translate-x-8"
+                className="w-full max-w-sm sm:max-w-md lg:max-w-none lg:w-[105%] xl:w-[110%] h-auto object-contain object-bottom pointer-events-none select-none"
               />
             </div>
           </div>

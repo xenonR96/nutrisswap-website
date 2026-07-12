@@ -133,7 +133,7 @@ function HomePage() {
               <img
                 src="/hero-scan-mockup.png"
                 alt={t('hero.screenshotsAlt')}
-                className="w-full max-w-sm sm:max-w-md lg:max-w-none lg:w-[105%] xl:w-[110%] h-auto object-contain object-bottom pointer-events-none select-none"
+                className="w-full max-w-sm sm:max-w-md lg:max-w-none lg:w-[105%] xl:w-[110%] h-auto object-contain object-bottom pointer-events-none select-none drop-shadow-2xl"
               />
             </div>
           </div>

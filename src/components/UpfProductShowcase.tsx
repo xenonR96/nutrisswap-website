@@ -69,13 +69,13 @@ export function UpfProductShowcase() {
         <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{t('why.upfBox.subtitle')}</p>
       </div>
 
-      <div className="max-w-xl mx-auto">
+      <div className="w-full">
         <div
           key={product.id}
-          className="grid grid-cols-[minmax(150px,42%)_1fr] sm:grid-cols-[180px_1fr] gap-4 items-start transition-opacity duration-300"
+          className="grid grid-cols-[minmax(160px,38%)_1fr] sm:grid-cols-[220px_1fr] md:grid-cols-[260px_1fr] gap-4 sm:gap-5 items-start transition-opacity duration-300"
         >
           <div className="w-full">
-            <div className="h-44 sm:h-48 overflow-hidden rounded-xl bg-gray-50 border border-gray-200/60">
+            <div className="h-48 sm:h-52 md:h-56 overflow-hidden rounded-xl bg-gray-50 border border-gray-200/60">
               <img
                 src={product.image}
                 alt={product.name}
@@ -90,19 +90,21 @@ export function UpfProductShowcase() {
           <div className="space-y-3 min-w-0">
             <div>
               <p className="text-sm font-semibold text-gray-900 mb-2">{t('why.upfBox.transformationProfile')}</p>
-              <div className="relative pb-3">
-                <div className="flex h-1.5 rounded-full overflow-hidden">
+              <div className="relative">
+                <div className="flex h-2 rounded-full overflow-hidden">
                   <div className="flex-1 bg-green-500" />
                   <div className="flex-1 bg-green-500/75" />
                   <div className="flex-1 bg-orange-500" />
                   <div className="flex-1 bg-red-500/80" />
                 </div>
-                <div
-                  className="absolute top-[calc(100%+1px)] w-0 h-0 border-l-[4px] border-r-[4px] border-t-[6px] border-l-transparent border-r-transparent border-t-gray-500 transition-all duration-500"
-                  style={{ left: NOVA_POSITIONS[product.nova], transform: 'translateX(-50%)' }}
-                />
+                <div className="relative h-3">
+                  <div
+                    className="absolute top-1 w-0 h-0 border-l-[5px] border-r-[5px] border-b-[7px] border-l-transparent border-r-transparent border-b-gray-500 transition-all duration-500"
+                    style={{ left: NOVA_POSITIONS[product.nova], transform: 'translateX(-50%)' }}
+                  />
+                </div>
               </div>
-              <div className="flex justify-between text-xs text-gray-500">
+              <div className="flex justify-between text-xs text-gray-500 mt-1">
                 <span>{t('why.upfBox.novaUnprocessed')}</span>
                 <span>{t('why.upfBox.novaUltraProcessed')}</span>
               </div>

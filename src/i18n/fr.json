@@ -70,7 +70,7 @@
     "upfBox": {
       "title": "Repérez l'ultra-transformé avant de l'ajouter au panier",
       "subtitle": "Chaque scan montre le vrai niveau de transformation — et signale les huiles de graines, édulcorants et additifs à éviter.",
-      "novaLabel": "NOVA",
+      "transformationProfile": "Profil de transformation",
       "novaUnprocessed": "Non transformé",
       "novaUltraProcessed": "Ultra-transformé",
       "seedOilsTitle": "Huiles de graines",

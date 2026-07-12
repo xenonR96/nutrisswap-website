@@ -69,54 +69,55 @@ export function UpfProductShowcase() {
         <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{t('why.upfBox.subtitle')}</p>
       </div>
 
-      <div
-        key={product.id}
-        className="grid md:grid-cols-[140px_1fr] lg:grid-cols-[160px_1fr] gap-5 lg:gap-8 items-start transition-opacity duration-300"
-      >
-        <div className="mx-auto md:mx-0 w-full max-w-[160px]">
-          <div className="h-36 sm:h-40 overflow-hidden rounded-xl bg-gray-50 border border-gray-200/60">
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-full object-contain p-2"
-            />
-          </div>
-          <p className="mt-2 text-center md:text-left text-xs font-semibold text-gray-900 leading-snug line-clamp-2">
-            {product.name}
-          </p>
-        </div>
-
-        <div className="space-y-4">
-          <div>
-            <p className="text-sm font-semibold text-gray-900 mb-2">{t('why.upfBox.novaLabel')}</p>
-            <div className="relative max-w-md">
-              <div className="flex h-1.5 rounded-full overflow-hidden">
-                <div className="flex-1 bg-green-500" />
-                <div className="flex-1 bg-green-500/75" />
-                <div className="flex-1 bg-orange-500" />
-                <div className="flex-1 bg-red-500/80" />
-              </div>
-              <div
-                className="absolute -top-1 w-0 h-0 border-l-[4px] border-r-[4px] border-b-[6px] border-l-transparent border-r-transparent border-b-gray-500 transition-all duration-500"
-                style={{ left: NOVA_POSITIONS[product.nova], transform: 'translateX(-50%)' }}
+      <div className="max-w-xl mx-auto">
+        <div
+          key={product.id}
+          className="grid grid-cols-[minmax(150px,42%)_1fr] sm:grid-cols-[180px_1fr] gap-4 items-start transition-opacity duration-300"
+        >
+          <div className="w-full">
+            <div className="h-44 sm:h-48 overflow-hidden rounded-xl bg-gray-50 border border-gray-200/60">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-full object-contain p-2"
               />
             </div>
-            <div className="flex justify-between text-xs text-gray-500 mt-2 max-w-md">
-              <span>{t('why.upfBox.novaUnprocessed')}</span>
-              <span>{t('why.upfBox.novaUltraProcessed')}</span>
-            </div>
-            <p className={`mt-2 inline-flex px-2.5 py-1 rounded-full text-xs font-semibold ${NOVA_STYLES[product.nova]}`}>
-              {product.novaLabel}
+            <p className="mt-2 text-xs font-semibold text-gray-900 leading-snug line-clamp-2">
+              {product.name}
             </p>
           </div>
 
-          <div>
-            <div className="flex items-center justify-between gap-3 mb-2">
-              <p className="text-sm font-semibold text-gray-900">{t('why.upfBox.seedOilsTitle')}</p>
-              <span className={`px-2 py-0.5 rounded-full text-xs font-semibold ${STATUS_STYLES[product.seedOilsTone]}`}>
-                {product.seedOilsStatus}
-              </span>
+          <div className="space-y-3 min-w-0">
+            <div>
+              <p className="text-sm font-semibold text-gray-900 mb-2">{t('why.upfBox.transformationProfile')}</p>
+              <div className="relative pb-3">
+                <div className="flex h-1.5 rounded-full overflow-hidden">
+                  <div className="flex-1 bg-green-500" />
+                  <div className="flex-1 bg-green-500/75" />
+                  <div className="flex-1 bg-orange-500" />
+                  <div className="flex-1 bg-red-500/80" />
+                </div>
+                <div
+                  className="absolute top-[calc(100%+1px)] w-0 h-0 border-l-[4px] border-r-[4px] border-t-[6px] border-l-transparent border-r-transparent border-t-gray-500 transition-all duration-500"
+                  style={{ left: NOVA_POSITIONS[product.nova], transform: 'translateX(-50%)' }}
+                />
+              </div>
+              <div className="flex justify-between text-xs text-gray-500">
+                <span>{t('why.upfBox.novaUnprocessed')}</span>
+                <span>{t('why.upfBox.novaUltraProcessed')}</span>
+              </div>
+              <p className={`mt-2 inline-flex px-2.5 py-1 rounded-full text-xs font-semibold ${NOVA_STYLES[product.nova]}`}>
+                {product.novaLabel}
+              </p>
             </div>
+
+            <div>
+              <div className="flex items-center gap-2 flex-wrap mb-1.5">
+                <p className="text-sm font-semibold text-gray-900">{t('why.upfBox.seedOilsTitle')}</p>
+                <span className={`px-2 py-0.5 rounded-full text-xs font-semibold ${STATUS_STYLES[product.seedOilsTone]}`}>
+                  {product.seedOilsStatus}
+                </span>
+              </div>
             {product.seedOilChips.length > 0 ? (
               <div className="flex flex-wrap gap-1.5">
                 {product.seedOilChips.map((chip) => (
@@ -161,6 +162,7 @@ export function UpfProductShowcase() {
             ) : (
               <p className="text-xs text-gray-500">{product.noneDetected}</p>
             )}
+          </div>
           </div>
         </div>
       </div>

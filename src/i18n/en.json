@@ -70,7 +70,7 @@
     "upfBox": {
       "title": "Spot ultra-processed food before it hits your cart",
       "subtitle": "Every scan shows how processed a product really is — and flags the seed oils, sweeteners, and additives worth avoiding.",
-      "novaLabel": "NOVA",
+      "transformationProfile": "Transformation profile",
       "novaUnprocessed": "Unprocessed",
       "novaUltraProcessed": "Ultra-processed",
       "seedOilsTitle": "Seed Oils",

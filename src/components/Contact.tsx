@@ -93,7 +93,7 @@ export const Contact = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-gray-600">
-              Copyright © 2025 MxJ Digital
+              Copyright © 2026 MxJ Digital
             </div>
             <div className="flex items-center gap-6">
               <Link to="/terms" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">

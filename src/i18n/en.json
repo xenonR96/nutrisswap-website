@@ -177,11 +177,11 @@
   "blog": {
     "eyebrow": "Articles",
     "title": "NutriSwap Blog",
-    "subtitle": "Guides in French on ultra-processed food, seed oils, additives, NOVA, and Nutri-Score — the same educational articles as in the app.",
+    "subtitle": "Learn how ultra-processed foods are made, why seed oils and additives matter, and how NOVA and Nutri-Score actually work — so you can spot industrial food before it hits your cart.",
     "back": "All articles",
     "moreArticles": "More articles",
     "homeTitle": "Read our latest articles",
-    "homeSubtitle": "Clear explanations to help you understand what is really in your food.",
+    "homeSubtitle": "From hexane in seed oils to food additives: short guides that explain what labels leave out.",
     "viewAll": "View all articles"
   },
   "getPage": {

@@ -1,8 +1,10 @@
 {
   "nav": {
+    "home": "Accueil",
     "howItWorks": "Comment ça marche",
     "features": "Fonctionnalités",
     "faq": "FAQ",
+    "blog": "Blog",
     "download": "Télécharger"
   },
   "banner": "Disponible sur l'App Store — repérez l'ultra-transformé en quelques secondes",
@@ -171,6 +173,16 @@
     "privacy": "Politique de confidentialité",
     "contact": "Contacter le support",
     "sources": "Sources"
+  },
+  "blog": {
+    "eyebrow": "Articles",
+    "title": "Blog NutriSwap",
+    "subtitle": "Des guides en français sur l'ultra-transformé, les huiles de graines, les additifs, le NOVA et le Nutri-Score — les mêmes articles éducatifs que dans l'app.",
+    "back": "Tous les articles",
+    "moreArticles": "Autres articles",
+    "homeTitle": "Lisez nos derniers articles",
+    "homeSubtitle": "Des explications claires pour comprendre ce qu'il y a vraiment dans vos aliments.",
+    "viewAll": "Voir tous les articles"
   },
   "getPage": {
     "title": "L'app pour mieux manger.",

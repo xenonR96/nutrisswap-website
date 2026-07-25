@@ -1,8 +1,10 @@
 {
   "nav": {
+    "home": "Home",
     "howItWorks": "How it works",
     "features": "Features",
     "faq": "FAQ",
+    "blog": "Blog",
     "download": "Download"
   },
   "banner": "Available now on the App Store — spot ultra-processed food in seconds",
@@ -171,6 +173,16 @@
     "privacy": "Privacy Policy",
     "contact": "Contact Support",
     "sources": "Sources"
+  },
+  "blog": {
+    "eyebrow": "Articles",
+    "title": "NutriSwap Blog",
+    "subtitle": "Guides in French on ultra-processed food, seed oils, additives, NOVA, and Nutri-Score — the same educational articles as in the app.",
+    "back": "All articles",
+    "moreArticles": "More articles",
+    "homeTitle": "Read our latest articles",
+    "homeSubtitle": "Clear explanations to help you understand what is really in your food.",
+    "viewAll": "View all articles"
   },
   "getPage": {
     "title": "The app to eat better.",

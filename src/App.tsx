@@ -21,6 +21,9 @@ import { ComingSoonModal } from './components/ComingSoonModal';
 import { LanguageToggle } from './components/LanguageToggle';
 import { AppStoreBadge } from './components/AppStoreBadge';
 import { UpfProductShowcase } from './components/UpfProductShowcase';
+import { Blog } from './components/Blog';
+import { BlogArticle } from './components/BlogArticle';
+import { articles, getArticleImage } from './data/articles';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/nutriswap/id6745822109';
 
@@ -72,7 +75,9 @@ function HomePage() {
       <nav className="bg-white border-b border-gray-200/80 sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-2 sm:gap-4">
           <div className="flex items-center gap-4 lg:gap-8 min-w-0">
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
             <div className="hidden md:flex items-center gap-6">
               <button
                 onClick={() => scrollToSection('how-it-works')}
@@ -86,6 +91,12 @@ function HomePage() {
               >
                 {t('nav.features')}
               </button>
+              <Link
+                to="/blog"
+                className="text-gray-600 hover:text-gray-900 font-medium transition-colors"
+              >
+                {t('nav.blog')}
+              </Link>
               <button
                 onClick={() => scrollToSection('faq')}
                 className="text-gray-600 hover:text-gray-900 font-medium transition-colors"
@@ -279,7 +290,7 @@ function HomePage() {
             </div>
           </div>
 
-          <div id="faq" className="max-w-2xl mx-auto mb-16 scroll-mt-24">
+          <div id="faq" className="max-w-2xl mx-auto mb-10 sm:mb-16 scroll-mt-24">
             <h2 className="text-2xl font-semibold text-center mb-8 text-gray-900">
               {t('faq.title')}
             </h2>
@@ -295,6 +306,44 @@ function HomePage() {
                   </summary>
                   <p className="px-6 py-4 text-gray-600 border-t border-gray-100">{faq.answer}</p>
                 </details>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-10 sm:mb-16">
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{t('blog.homeTitle')}</h2>
+                <p className="text-gray-600">{t('blog.homeSubtitle')}</p>
+              </div>
+              <Link
+                to="/blog"
+                className="text-brand-primary font-semibold hover:text-brand-primary-hover transition-colors whitespace-nowrap"
+              >
+                {t('blog.viewAll')} →
+              </Link>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {articles.slice(0, 3).map((article) => (
+                <Link
+                  key={article.id}
+                  to={`/blog/${article.id}`}
+                  className="group bg-white rounded-card shadow-card border border-gray-200/60 overflow-hidden hover:shadow-md transition-shadow"
+                >
+                  <div className="aspect-[16/10] overflow-hidden bg-gray-50">
+                    <img
+                      src={getArticleImage(article)}
+                      alt={article.title}
+                      className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <p className="text-xs font-medium text-brand-muted mb-2 capitalize">{article.dateText}</p>
+                    <h3 className="text-base font-semibold text-gray-900 leading-snug group-hover:text-brand-primary transition-colors line-clamp-2">
+                      {article.title}
+                    </h3>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -318,6 +367,9 @@ function HomePage() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-gray-600">{t('footer.copyright')}</div>
             <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+              <Link to="/blog" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                {t('nav.blog')}
+              </Link>
               <Link to="/terms" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                 {t('footer.terms')}
               </Link>
@@ -342,6 +394,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/:id" element={<BlogArticle />} />
       <Route path="/terms" element={<Terms />} />
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/contact" element={<Contact />} />

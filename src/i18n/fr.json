@@ -280,5 +280,33 @@
     "note": "La suppression de votre compte efface votre profil, vos préférences et votre historique de scans. Cette action est irréversible.",
     "mailSubject": "Demande de suppression de compte",
     "mailBody": "Veuillez supprimer mon compte NutriSwap.\n\nE-mail enregistré : \n"
+  },
+  "termsPage": {
+    "title": "Conditions générales d'utilisation",
+    "lastUpdated": "Dernière mise à jour : 5 mai 2025",
+    "interpretationTitle": "Interprétation et définitions",
+    "interpretationHeading": "Interprétation",
+    "interpretationBody": "Les mots dont la première lettre est en majuscule ont la signification définie ci-dessous. Ces définitions s'appliquent qu'elles apparaissent au singulier ou au pluriel.",
+    "definitionsHeading": "Définitions",
+    "defAffiliate": "**Affilié** désigne une entité qui contrôle, est contrôlée par ou est sous contrôle commun avec une partie, « contrôle » signifiant la détention de 50 % ou plus des actions, parts sociales ou autres titres donnant droit de vote pour l'élection des administrateurs ou d'autres autorités de gestion.",
+    "defCountry": "**Pays** désigne : New York, États-Unis",
+    "defCompany": "**Société** (désignée par « la Société », « Nous », « Notre » ou « Nos » dans le présent accord) désigne MxJ Digital.",
+    "defDevice": "**Appareil** désigne tout équipement permettant d'accéder au Service, tel qu'un ordinateur, un téléphone portable ou une tablette.",
+    "defService": "**Service** désigne le Site web.",
+    "defWebsite": "**Site web** désigne NutriSwap, accessible depuis nutriswap.app",
+    "defYou": "**Vous** désigne la personne accédant au Service ou l'utilisant, ou la société ou autre entité juridique pour le compte de laquelle cette personne accède au Service ou l'utilise, le cas échéant.",
+    "acknowledgmentTitle": "Acceptation",
+    "acknowledgmentP1": "Les présentes conditions générales régissent l'utilisation de ce Service et constituent l'accord entre Vous et la Société. Elles définissent les droits et obligations de tous les utilisateurs concernant l'utilisation du Service.",
+    "acknowledgmentP2": "Votre accès au Service et son utilisation sont conditionnés par Votre acceptation et Votre respect des présentes conditions. Elles s'appliquent à tous les visiteurs, utilisateurs et autres personnes accédant au Service ou l'utilisant.",
+    "linksTitle": "Liens vers d'autres sites",
+    "linksBody": "Notre Service peut contenir des liens vers des sites ou services tiers qui ne sont ni détenus ni contrôlés par la Société. La Société n'exerce aucun contrôle sur le contenu, les politiques de confidentialité ou les pratiques de ces sites ou services tiers et n'en assume aucune responsabilité.",
+    "terminationTitle": "Résiliation",
+    "terminationBody": "Nous pouvons suspendre ou résilier Votre accès immédiatement, sans préavis ni responsabilité, pour quelque raison que ce soit, notamment en cas de violation des présentes conditions. En cas de résiliation, Votre droit d'utiliser le Service cesse immédiatement.",
+    "liabilityTitle": "Limitation de responsabilité",
+    "liabilityBody": "Dans la mesure maximale permise par la loi applicable, la Société et ses fournisseurs ne pourront en aucun cas être tenus responsables de dommages spéciaux, accessoires, indirects ou consécutifs (y compris, sans s'y limiter, la perte de profits, la perte de données ou d'autres informations, l'interruption d'activité, les dommages corporels ou la violation de la vie privée liés à l'utilisation ou à l'impossibilité d'utiliser le Service).",
+    "contactTitle": "Nous contacter",
+    "contactBody": "Pour toute question concernant les présentes conditions, vous pouvez nous contacter :",
+    "contactEmail": "Par e-mail : nutriswap@mxjdigital.com",
+    "contactPageBefore": "Via notre page de contact :"
   }
 }

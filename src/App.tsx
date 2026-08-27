@@ -15,6 +15,7 @@ import { Logo } from './components/Logo';
 import { Terms } from './components/Terms';
 import { Privacy } from './components/Privacy';
 import { Contact } from './components/Contact';
+import { DeleteAccount } from './components/DeleteAccount';
 import { Sources } from './components/Sources';
 import { GetPage } from './components/GetPage';
 import { ComingSoonModal } from './components/ComingSoonModal';
@@ -399,6 +400,7 @@ function App() {
       <Route path="/terms" element={<Terms />} />
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/delete-account" element={<DeleteAccount />} />
       <Route path="/sources" element={<Sources />} />
       <Route path="/get" element={<GetPage />} />
     </Routes>

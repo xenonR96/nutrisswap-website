@@ -265,5 +265,20 @@
     "takeActionSalt": "Agir sur le sel",
     "harvardSalt": "Harvard : sel et sodium",
     "sodiumResearch": "Recherche sur le sodium"
+  },
+  "deleteAccountPage": {
+    "title": "Supprimer votre compte",
+    "intro": "Vous pouvez demander la suppression de votre compte NutriSwap et des données personnelles associées à tout moment.",
+    "stepsTitle": "Comment demander la suppression de votre compte",
+    "step1Before": "Envoyez un e-mail à",
+    "step1After": "depuis l'adresse e-mail associée à votre compte NutriSwap.",
+    "step2": "Utilisez l'objet",
+    "step2Subject": "Demande de suppression de compte",
+    "step3": "Dans le message, indiquez l'adresse e-mail utilisée pour créer votre compte NutriSwap.",
+    "step4": "Nous confirmerons votre demande et supprimerons votre compte et vos données personnelles dans un délai de 30 jours.",
+    "cta": "Nous écrire pour supprimer votre compte",
+    "note": "La suppression de votre compte efface votre profil, vos préférences et votre historique de scans. Cette action est irréversible.",
+    "mailSubject": "Demande de suppression de compte",
+    "mailBody": "Veuillez supprimer mon compte NutriSwap.\n\nE-mail enregistré : \n"
   }
 }

@@ -265,5 +265,20 @@
     "takeActionSalt": "Take Action on Salt",
     "harvardSalt": "Harvard: Salt and Sodium",
     "sodiumResearch": "Sodium Research"
+  },
+  "deleteAccountPage": {
+    "title": "Delete Your Account",
+    "intro": "You can request deletion of your NutriSwap account and associated personal data at any time.",
+    "stepsTitle": "How to request account deletion",
+    "step1Before": "Send an email to",
+    "step1After": "from the email address linked to your NutriSwap account.",
+    "step2": "Use the subject line",
+    "step2Subject": "Account Deletion Request",
+    "step3": "In the message, include the email address you used to sign up for NutriSwap.",
+    "step4": "We will confirm your request and delete your account and personal data within 30 days.",
+    "cta": "Email us to delete your account",
+    "note": "Deleting your account removes your profile, preferences, and scan history. This action cannot be undone.",
+    "mailSubject": "Account Deletion Request",
+    "mailBody": "Please delete my NutriSwap account.\n\nRegistered email: \n"
   }
 }

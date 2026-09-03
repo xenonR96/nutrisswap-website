@@ -21,6 +21,7 @@ const IMAGE_MAP: Record<string, string> = {
   home_article_nutriscore: '/blog/nutriscore.png',
   home_article_nova: '/blog/nova.png',
   home_article_additifs: '/blog/additifs.png',
+  home_article_additifs_nutrinet: '/blog/additifs-nutrinet.png',
 };
 
 export const articles = rawArticles as Article[];

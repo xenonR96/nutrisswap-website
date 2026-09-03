@@ -1,5 +1,144 @@
 [
   {
+    "id": "fr-additifs-nutrinet",
+    "title": "Additifs alimentaires : lesquels inquiètent le plus les chercheurs de NutriNet-Santé ?",
+    "subtitle": "Carraghénanes, phosphates, mono- et diglycérides d'acides gras… Plusieurs additifs très courants dans les aliments industriels sont aujourd'hui examinés de près par les chercheurs.",
+    "dateText": "septembre 2026",
+    "imageAssetName": "home_article_additifs_nutrinet",
+    "blocks": [
+      {
+        "kind": "paragraph",
+        "text": "Carraghénanes, phosphates, mono- et diglycérides d'acides gras… Plusieurs additifs très courants dans les aliments industriels sont aujourd'hui examinés de près par les chercheurs. Depuis quelques années, les résultats issus de la cohorte française NutriNet-Santé suggèrent des associations entre la consommation de certains d'entre eux et un risque accru de diabète de type 2, de maladies cardiovasculaires ou de certains cancers."
+      },
+      {
+        "kind": "heading",
+        "text": "NutriNet-Santé, un laboratoire grandeur nature"
+      },
+      {
+        "kind": "paragraph",
+        "text": "Lancée en 2009, NutriNet-Santé est une vaste étude de santé publique consacrée aux relations entre nutrition et santé. Elle est coordonnée par l'Équipe de recherche en épidémiologie nutritionnelle CRESS-EREN, associant notamment l'Inserm, INRAE, le Cnam, l'Université Sorbonne Paris Nord et l'Université Paris Cité. Plus de 170 000 volontaires, les « Nutrinautes », y ont participé."
+      },
+      {
+        "kind": "paragraph",
+        "text": "L'une des forces de cette cohorte réside dans la précision du recueil alimentaire. Les participants renseignent régulièrement ce qu'ils mangent au moyen d'enregistrements alimentaires de 24 heures, incluant les marques des produits. Ces informations sont croisées avec des bases de données de composition et, lorsque nécessaire, avec des dosages en laboratoire afin d'estimer l'exposition aux différents additifs."
+      },
+      {
+        "kind": "paragraph",
+        "text": "Une précision essentielle : NutriNet-Santé est une étude observationnelle. Elle permet de mettre en évidence des associations statistiques, mais ne peut démontrer à elle seule qu'un additif provoque une maladie."
+      },
+      {
+        "kind": "heading",
+        "text": "Carraghénanes : des signaux pour le cancer et le diabète"
+      },
+      {
+        "kind": "paragraph",
+        "text": "Les carraghénanes E407 et E407a, extraits d'algues rouges, sont utilisés comme épaississants ou stabilisants dans certains desserts, produits laitiers, crèmes et aliments industriels."
+      },
+      {
+        "kind": "paragraph",
+        "text": "Dans une étude publiée en 2024 portant sur environ 92 000 adultes, une consommation plus élevée de carraghénanes a été associée à certains risques de cancer. Pour l'ensemble E407-E407a, les chercheurs ont notamment observé une association avec le cancer du sein."
+      },
+      {
+        "kind": "paragraph",
+        "text": "Une autre analyse de 104 139 participants, publiée la même année dans The Lancet Diabetes & Endocrinology, a associé une consommation plus élevée de carraghénanes, notamment E407, à une incidence supérieure du diabète de type 2."
+      },
+      {
+        "kind": "heading",
+        "text": "E471 : les mono- et diglycérides d'acides gras"
+      },
+      {
+        "kind": "paragraph",
+        "text": "Les mono- et diglycérides d'acides gras (E471) font partie des émulsifiants fréquemment utilisés dans les pâtisseries, glaces, sauces, margarines et autres produits transformés."
+      },
+      {
+        "kind": "paragraph",
+        "text": "Dans l'étude NutriNet-Santé sur le cancer, les plus gros consommateurs d'E471 présentaient, par rapport aux plus faibles consommateurs, un risque relatif supérieur de 15 % pour l'ensemble des cancers, de 24 % pour le cancer du sein et de 46 % pour le cancer de la prostate."
+      },
+      {
+        "kind": "paragraph",
+        "text": "Des associations cardiovasculaires ont également été observées pour le groupe des mono- et diglycérides et certains de leurs dérivés, notamment avec les maladies cardiovasculaires et coronariennes."
+      },
+      {
+        "kind": "heading",
+        "text": "Diphosphates : un signal surtout observé dans les mélanges"
+      },
+      {
+        "kind": "paragraph",
+        "text": "Les diphosphates E450 sont utilisés comme agents levants, stabilisants ou rétenteurs d'eau dans différentes charcuteries, pâtisseries et préparations industrielles."
+      },
+      {
+        "kind": "paragraph",
+        "text": "Les résultats les plus récents invitent surtout à les considérer dans le contexte des cocktails d'additifs réellement consommés. Une analyse NutriNet-Santé présentée en 2025 a identifié un mélange caractérisé notamment par des carbonates de sodium, diphosphates, glycérol et carbonates d'ammonium, associé à une incidence supérieure d'hypertension. Un autre mélange comportant des diphosphates présentait également une association avec l'hypertension."
+      },
+      {
+        "kind": "paragraph",
+        "text": "Il serait néanmoins incorrect d'en conclure que l'E450 pris isolément est responsable de cette augmentation : ces résultats concernent des mélanges de substances."
+      },
+      {
+        "kind": "paragraph",
+        "text": "Une étude publiée en 2025 sur 108 643 participants a par ailleurs identifié cinq grands mélanges d'additifs et étudié leur relation avec le diabète de type 2. Deux étaient associés à une incidence supérieure de la maladie. Le mélange particulièrement riche en diphosphates n'en faisait pas partie ; l'un des mélanges associés contenait en revanche des polyphosphates, mais aussi des carraghénanes, gomme guar, gomme xanthane et amidons modifiés."
+      },
+      {
+        "kind": "heading",
+        "text": "Gommes, celluloses et autres additifs"
+      },
+      {
+        "kind": "paragraph",
+        "text": "D'autres signaux ont émergé. La gomme guar E412, la gomme arabique E414, la gomme xanthane E415 et le phosphate tripotassique E340 ont été associés à une incidence plus élevée du diabète de type 2."
+      },
+      {
+        "kind": "paragraph",
+        "text": "Sur le plan cardiovasculaire, la carboxyméthylcellulose E466 a été associée à une légère augmentation du risque de maladies cardiovasculaires et coronariennes, tandis que le phosphate trisodique E339 a présenté une association avec le risque coronarien."
+      },
+      {
+        "kind": "heading",
+        "text": "Des signaux à ne pas ignorer"
+      },
+      {
+        "kind": "paragraph",
+        "text": "Ces résultats doivent encore être reproduits dans d'autres populations et complétés par des travaux expérimentaux permettant de mieux comprendre les mécanismes en jeu et les éventuels effets « cocktail »."
+      },
+      {
+        "kind": "paragraph",
+        "text": "Ils renforcent néanmoins un principe de précaution assez simple : limiter la consommation régulière d'aliments ultra-transformés riches en additifs non indispensables et privilégier, lorsque c'est possible, des aliments peu transformés et des listes d'ingrédients courtes."
+      },
+      {
+        "kind": "heading",
+        "text": "Sources"
+      },
+      {
+        "kind": "link",
+        "text": "Sellem L. et al. (2024) — Food additive emulsifiers and cancer risk: Results from the French prospective NutriNet-Santé cohort. PLOS Medicine",
+        "url": "https://doi.org/10.1371/journal.pmed.1004338"
+      },
+      {
+        "kind": "link",
+        "text": "Salame C. et al. (2024) — Food additive emulsifiers and the risk of type 2 diabetes: analysis of data from the NutriNet-Santé prospective cohort study. The Lancet Diabetes & Endocrinology",
+        "url": "https://doi.org/10.1016/S2213-8587(24)00066-X"
+      },
+      {
+        "kind": "link",
+        "text": "Sellem L. et al. (2023) — Food additive emulsifiers and risk of cardiovascular disease in the NutriNet-Santé cohort: prospective cohort study. The BMJ",
+        "url": "https://doi.org/10.1136/bmj-2023-076058"
+      },
+      {
+        "kind": "link",
+        "text": "Payen de la Garanderie M. et al. (2025) — Food additive mixtures and type 2 diabetes incidence: Results from the NutriNet-Santé prospective cohort. PLOS Medicine",
+        "url": "https://doi.org/10.1371/journal.pmed.1004570"
+      },
+      {
+        "kind": "link",
+        "text": "Payen de la Garanderie M. et al. (2025) — Food additive mixtures and risk of cardiovascular and hypertension in the NutriNet-Santé cohort. European Journal of Public Health",
+        "url": "https://doi.org/10.1093/eurpub/ckaf161.192"
+      },
+      {
+        "kind": "link",
+        "text": "Inserm (2024) — Présentation de l'étude NutriNet-Santé et des travaux sur les émulsifiants et le risque de cancer",
+        "url": "https://presse.inserm.fr/les-emulsifiants-alimentaires-associes-a-un-risque-accru-de-cancer/58645/"
+      }
+    ]
+  },
+  {
     "id": "fr-hexane-aliments",
     "title": "Hexane dans nos aliments : un choix industriel au détriment de la santé",
     "subtitle": "L’hexane est un solvant issu du raffinage du pétrole. Dans l’industrie agroalimentaire, il sert à extraire l’huile des graines de soja, de colza ou de tournesol.",

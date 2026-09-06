@@ -1,22 +1,49 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Logo } from './Logo';
-import { ComingSoonModal } from './ComingSoonModal';
+import { LanguageToggle } from './LanguageToggle';
+
+const APP_STORE_URL = 'https://apps.apple.com/app/nutriswap/id6745822109';
+
+const definitionKeys = [
+  'defAccount',
+  'defCompany',
+  'defCookies',
+  'defCountry',
+  'defDevice',
+  'defPersonalData',
+  'defService',
+  'defWebsite',
+] as const;
+
+const typeKeys = ['typePersonal', 'typeUsage', 'typeCookies'] as const;
+
+const useKeys = [
+  'useProvide',
+  'useNotify',
+  'useSupport',
+  'useAnalysis',
+  'useMonitor',
+  'useDetect',
+] as const;
+
+const renderBold = (text: string) => {
+  const parts = text.split(/\*\*(.*?)\*\*/);
+  return parts.map((part, index) =>
+    index % 2 === 1 ? <strong key={index}>{part}</strong> : part
+  );
+};
 
 export const Privacy = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const handleDownloadClick = () => {
-    setIsModalOpen(true);
-  };
-
   return (
     <div className="min-h-screen bg-[#f8fafc] flex flex-col">
-      <ComingSoonModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <nav className="bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-8">
@@ -24,113 +51,120 @@ export const Privacy = () => {
               <Logo />
             </Link>
             <div className="hidden md:flex items-center gap-6">
-              <Link 
+              <Link
                 to="/#how-it-works"
                 className="text-gray-600 hover:text-gray-900 font-medium transition-colors"
               >
-                How it works
+                {t('nav.howItWorks')}
               </Link>
-              <Link 
+              <Link
+                to="/blog"
+                className="text-gray-600 hover:text-gray-900 font-medium transition-colors"
+              >
+                {t('nav.blog')}
+              </Link>
+              <Link
                 to="/#faq"
                 className="text-gray-600 hover:text-gray-900 font-medium transition-colors"
               >
-                FAQ
+                {t('nav.faq')}
               </Link>
             </div>
           </div>
-          <button 
-            onClick={handleDownloadClick}
-            className="px-6 py-2.5 bg-brand-primary text-white rounded-xl font-semibold hover:bg-brand-primary-hover transition-colors shadow-sm"
-          >
-            Download
-          </button>
+          <div className="flex items-center gap-3 shrink-0">
+            <LanguageToggle />
+            <a
+              href={APP_STORE_URL}
+              className="px-6 py-2.5 bg-brand-primary text-white rounded-xl font-semibold hover:bg-brand-primary-hover transition-colors shadow-sm"
+            >
+              {t('nav.download')}
+            </a>
+          </div>
         </div>
       </nav>
-      
+
       <div className="flex-grow">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h1 className="text-3xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-8">{t('privacyPage.title')}</h1>
           <div className="prose prose-emerald max-w-none">
-            <p className="text-gray-600 mb-8">Last updated: May 5, 2025</p>
-            
+            <p className="text-gray-600 mb-8">{t('privacyPage.lastUpdated')}</p>
+
             <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <p className="mb-4">This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
-              
-              <p className="mb-8">We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
+              <p className="mb-4">{t('privacyPage.introP1')}</p>
+              <p className="mb-8">{t('privacyPage.introP2')}</p>
 
-              <h2 className="text-xl font-semibold mb-4">Interpretation and Definitions</h2>
-              <h3 className="text-lg font-medium mb-2">Interpretation</h3>
-              <p className="mb-4">The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
-              
-              <h3 className="text-lg font-medium mb-2">Definitions</h3>
+              <h2 className="text-xl font-semibold mb-4">{t('privacyPage.interpretationTitle')}</h2>
+              <h3 className="text-lg font-medium mb-2">{t('privacyPage.interpretationHeading')}</h3>
+              <p className="mb-4">{t('privacyPage.interpretationBody')}</p>
+
+              <h3 className="text-lg font-medium mb-2">{t('privacyPage.definitionsHeading')}</h3>
               <ul className="list-disc pl-5 mb-8 space-y-2">
-                <li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
-                <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to MxJ Digital.</li>
-                <li><strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by a website.</li>
-                <li><strong>Country</strong> refers to: New York, United States</li>
-                <li><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</li>
-                <li><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</li>
-                <li><strong>Service</strong> refers to the Website.</li>
-                <li><strong>Website</strong> refers to NutriSwap, accessible from nutriswap.app</li>
+                {definitionKeys.map((key) => (
+                  <li key={key}>{renderBold(t(`privacyPage.${key}`))}</li>
+                ))}
               </ul>
 
-              <h2 className="text-xl font-semibold mb-4">Collecting and Using Your Personal Data</h2>
-              <h3 className="text-lg font-medium mb-2">Types of Data Collected</h3>
-              <p className="mb-4">While using Our Service, We may collect several different types of information for various purposes:</p>
-              
+              <h2 className="text-xl font-semibold mb-4">{t('privacyPage.collectingTitle')}</h2>
+              <h3 className="text-lg font-medium mb-2">{t('privacyPage.typesHeading')}</h3>
+              <p className="mb-4">{t('privacyPage.typesIntro')}</p>
               <ul className="list-disc pl-5 mb-8 space-y-2">
-                <li><strong>Personal Data:</strong> Email address, Name</li>
-                <li><strong>Usage Data:</strong> Browser type, IP address, time spent on pages</li>
-                <li><strong>Cookies and Tracking Data</strong></li>
+                {typeKeys.map((key) => (
+                  <li key={key}>{renderBold(t(`privacyPage.${key}`))}</li>
+                ))}
               </ul>
 
-              <h2 className="text-xl font-semibold mb-4">Use of Your Personal Data</h2>
-              <p className="mb-4">We may use Personal Data for the following purposes:</p>
+              <h2 className="text-xl font-semibold mb-4">{t('privacyPage.useTitle')}</h2>
+              <p className="mb-4">{t('privacyPage.useIntro')}</p>
               <ul className="list-disc pl-5 mb-8 space-y-2">
-                <li>To provide and maintain our Service</li>
-                <li>To notify you about changes to our Service</li>
-                <li>To provide customer support</li>
-                <li>To gather analysis or valuable information so that we can improve our Service</li>
-                <li>To monitor the usage of our Service</li>
-                <li>To detect, prevent and address technical issues</li>
+                {useKeys.map((key) => (
+                  <li key={key}>{t(`privacyPage.${key}`)}</li>
+                ))}
               </ul>
 
-              <h2 className="text-xl font-semibold mb-4">Security of Your Personal Data</h2>
-              <p className="mb-8">The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
+              <h2 className="text-xl font-semibold mb-4">{t('privacyPage.securityTitle')}</h2>
+              <p className="mb-8">{t('privacyPage.securityBody')}</p>
 
-              <h2 className="text-xl font-semibold mb-4">Children's Privacy</h2>
-              <p className="mb-8">Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13.</p>
+              <h2 className="text-xl font-semibold mb-4">{t('privacyPage.childrenTitle')}</h2>
+              <p className="mb-8">{t('privacyPage.childrenBody')}</p>
 
-              <h2 className="text-xl font-semibold mb-4">Changes to this Privacy Policy</h2>
-              <p className="mb-8">We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top of this Privacy Policy.</p>
+              <h2 className="text-xl font-semibold mb-4">{t('privacyPage.changesTitle')}</h2>
+              <p className="mb-8">{t('privacyPage.changesBody')}</p>
 
-              <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
-              <p className="mb-4">If you have any questions about this Privacy Policy, you can contact us:</p>
+              <h2 className="text-xl font-semibold mb-4">{t('privacyPage.contactTitle')}</h2>
+              <p className="mb-4">{t('privacyPage.contactBody')}</p>
               <ul className="list-disc pl-5 space-y-2">
-                <li>By email: nutriswap@mxjdigital.com</li>
-                <li>By visiting this page on our website: https://nutriswap.app/contact</li>
+                <li>{t('privacyPage.contactEmail')}</li>
+                <li>
+                  {t('privacyPage.contactPageBefore')}{' '}
+                  <Link to="/contact" className="text-brand-primary hover:text-brand-primary-hover">
+                    nutriswap.app/contact
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Footer */}
       <footer className="bg-white border-t border-gray-200 py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-sm text-gray-600">
-              Copyright © 2026 MxJ Digital
-            </div>
-            <div className="flex items-center gap-6">
+            <div className="text-sm text-gray-600">{t('footer.copyright')}</div>
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+              <Link to="/blog" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                {t('nav.blog')}
+              </Link>
               <Link to="/terms" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                Terms of Service
+                {t('footer.terms')}
               </Link>
               <Link to="/privacy" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                Privacy Policy
+                {t('footer.privacy')}
               </Link>
               <Link to="/contact" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                Contact Support
+                {t('footer.contact')}
+              </Link>
+              <Link to="/sources" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                {t('footer.sources')}
               </Link>
             </div>
           </div>

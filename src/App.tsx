@@ -21,6 +21,7 @@ import { GetPage } from './components/GetPage';
 import { ComingSoonModal } from './components/ComingSoonModal';
 import { LanguageToggle } from './components/LanguageToggle';
 import { AppStoreBadge } from './components/AppStoreBadge';
+import { GooglePlayBadge } from './components/GooglePlayBadge';
 import { UpfProductShowcase } from './components/UpfProductShowcase';
 import { Blog } from './components/Blog';
 import { BlogArticle } from './components/BlogArticle';
@@ -137,9 +138,14 @@ function HomePage() {
               <p className="text-base sm:text-xl text-gray-600 mb-6 sm:mb-10 leading-relaxed">
                 {t('hero.subtitle')}
               </p>
-              <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="inline-block mx-auto lg:mx-0">
-                <AppStoreBadge className="h-12 sm:h-14 md:h-16 hover:opacity-90 transition-opacity" />
-              </a>
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4">
+                <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="inline-block">
+                  <AppStoreBadge className="h-12 sm:h-14 md:h-16 hover:opacity-90 transition-opacity" />
+                </a>
+                <span className="inline-block" aria-disabled="true">
+                  <GooglePlayBadge className="h-12 sm:h-14 md:h-16 opacity-90" />
+                </span>
+              </div>
             </div>
           </div>
 

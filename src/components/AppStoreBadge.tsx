@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 const BADGES = {
   en: '/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg',
-  fr: '/Download_on_the_App_Store_Badge_FRCA_RGB_blk.svg',
+  fr: '/Download_on_the_App_Store_Badge_FR_RGB_blk.png',
 } as const;
 
 interface AppStoreBadgeProps {
